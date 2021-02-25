@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 
+
 int GetElementConsole()
 {
 	int taxableIncome;
@@ -31,6 +32,7 @@ void Point1151()
 	delete[] data;
 }
 
+
 void Point1152()
 {
 	bool* data = new bool[10];
@@ -48,6 +50,7 @@ void Point1152()
 	}
 	delete[] data;
 }
+
 
 void Point1153()
 {
@@ -84,6 +87,7 @@ void BubbleSort(double*& data)
 		}
 	}
 }
+
 
 void Point1154()
 {
@@ -189,6 +193,7 @@ int* MakeRandomArray(const int arraySize)
 	std::cout << std::endl;
 	return data;
 }
+
 
 void Point1157()
 {

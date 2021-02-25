@@ -24,6 +24,7 @@
     <ProjectGuid>{bd4f77a5-d8dd-4e11-9caa-0e9adf3a158d}</ProjectGuid>
     <RootNamespace>lab1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lab1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IOMenu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point1111.cpp" />
     <ClCompile Include="Point1112.cpp" />
@@ -148,6 +150,7 @@
     <ClCompile Include="Point1158.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IOMenu.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

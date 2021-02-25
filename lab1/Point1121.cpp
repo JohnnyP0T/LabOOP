@@ -2,6 +2,7 @@
 #include <iostream>
 #include <array>
 
+
 double GetElementConsole()
 {
 	double taxableIncome;
@@ -15,6 +16,7 @@ double GetElementConsole()
 		std::cin.ignore(80, '\n');
 	}
 }
+
 
 void Point1121()
 {
@@ -40,6 +42,7 @@ void Point1121()
 		std::cout << var << " ";
 	}
 }
+
 
 void Point1122()
 {

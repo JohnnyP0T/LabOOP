@@ -1,5 +1,7 @@
 #include <iostream>
+
 using namespace std;
+
 void Breakpoints()
 {
 	double add = 1.0;

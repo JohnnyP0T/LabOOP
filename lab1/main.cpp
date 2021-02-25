@@ -1,152 +1,142 @@
 #include <iostream>
 
 #include "Point.h"
+#include "IOMenu.h"
 
-double GetElementConsoleDouble();
 
-int GetElementConsoleMain();
+/*
+ * Базовые элементы
+ * процедурного программирования
+ */
 
-void Invert(double* data);
 
 int main()
 {
-	std::cout << "1111 1112 1121 1122 1123 1132 1133 1151 1152 1153 1154 1155 1156 1157\n";
+	setlocale(LC_ALL, "Russian");
+	std::cout
+	// Дебаг
+	<< "1111 - проверить какие значения принимает переменная sum\n"
+	<< "1112 - sum на 777 итерации\n"
+	// Массивы
+	<< "1121 - массивы\n"
+	<< "1122 - массивы\n"
+	<< "1123 - массивы\n"
+	// Функции
+	<< "1132 - возведение в степень\n"
+	<< "1133 - округление\n"
+	// Динамическая память
+	<< "1151 - выделение памяти под массив вещественных чисел\n"
+	<< "1152 - выделение памяти под булевый массив\n"
+	<< "1153 - выделение памяти под массив символов\n"
+	<< "1154 - 1151 + сортировка\n"
+	<< "1155 - поиск в целочисленном массиве\n"
+	<< "1156 - поиск букв в массиве символов\n"
+	<< "1157 - создание рандомных массивов\n";
+	
 	while(true)
 	{
 		std::cout << "\nEnter point: \n";
-		const int valueMenu = GetElementConsoleMain();
+		const int valueMenu = GetElementConsoleInt();
 		switch (valueMenu)
 		{
 		case 1111:
 			{
 			Point1111();
+			system("pause");
 			break;
 			}
 		case 1112:
 			{
 			Point1112();
+			system("pause");
 			break;
 			}
 		case 1121:
 			{
 			Point1121();
+			system("pause");
 			break;
 			}
 		case 1122:
 			{
 			Point1122();
+			system("pause");
 			break;
 			}
 		case 1123:
 			{
 			Point1123();
+			system("pause");
 			break;
 			}
 		case 1132:
 			{
 			Point1132();
+			system("pause");
 			break;
 			}
 		case 1133:
 			{
 			Point1133();
+			system("pause");
 			break;
 			}
 		case 1151:
 			{
 			Point1151();
+			system("pause");
 			break;
 			}
 		case 1152:
 			{
 			Point1152();
+			system("pause");
 			break;
 			}
 		case 1153:
 			{
 			Point1153();
+			system("pause");
 			break;
 			}
 		case 1154:
 			{
 			Point1154();
+			system("pause");
 			break;
 			}
 		case 1155:
 			{
 			Point1155();
+			system("pause");
 			break;
 			}
 		case 1156:
 			{
 			Point1156();
+			system("pause");
 			break;
 			}
 		case 1157:
 			{
 			Point1157();
+			system("pause");
 			break;
 			}
 		case 1:
 			{
-				double* data = new double[10];
-				for(int i = 0; i < 10; i++)
-				{
-					std::cout << "\ndata[" << i << "]: ";
-					data[i] = GetElementConsoleDouble();
-				}
-				Invert(data);
-				for (int i = 0; i < 10; i++)
-				{
-					std::cout << data[i] << " ";
-				}
-				delete[] data;
-				break;
+				//TODO дополнительное задание
 			}
 		default:
 			{
 			std::cout << "error input\n";
+			system("pause");
 			break;
 			}
-		}	
-	}
-}
-
-
-int GetElementConsoleMain()
-{
-	int taxableIncome;
-	for (;;) 
-	{
-		if (std::cin >> taxableIncome)
-		{
-			return taxableIncome;
 		}
-		std::cin.clear();
-		std::cin.ignore(80, '\n');
+		system("cls");
 	}
 }
 
 
-void Invert(double* data)
-{
-	for(int i = 0; i < 10; i++)
-	{
-		data[i] *= -1;
-	}
-}
 
-
-double GetElementConsoleDouble()
-{
-	double taxableIncome;
-	for (;;) 
-	{
-		if (std::cin >> taxableIncome)
-		{
-			return taxableIncome;
-		}
-		std::cin.clear();
-		std::cin.ignore(80, '\n');
-	}
-}

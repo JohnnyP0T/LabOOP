@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+
 double GetPower(const double base, const int exponent)
 {
 	return std::pow(base, exponent);
@@ -16,7 +17,7 @@ void Point1132()
 }
 
 
-void RoundToTens(int& value)
+void RoundToTens(int& value) // Point1134
 {
 	if(value % 10 >= 5)
 	{

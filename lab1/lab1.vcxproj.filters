@@ -36,9 +36,15 @@
     <ClCompile Include="Point1131.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IOMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

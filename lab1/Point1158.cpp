@@ -12,6 +12,8 @@ int* ReadArray(const int count)
 	}
 	return values;
 }
+
+
 int CountPositiveValues(int* values, const int count)
 {
 	int result = 0;
@@ -24,6 +26,8 @@ int CountPositiveValues(int* values, const int count)
 	}
 	return result;
 }
+
+
 void Point1158()
 {
 	int count = 15;
