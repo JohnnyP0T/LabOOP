@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="IOMenu.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="IOMenu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point2211.cpp" />
     <ClCompile Include="Point2221.cpp" />

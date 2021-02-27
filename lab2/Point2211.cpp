@@ -12,7 +12,9 @@ void Sort(double* values, int count)
 	{
 		throw std::exception("count < 0");
 	}
+	
 	double swap;
+	
 	for (int i = 0; i < count; i++)
 	{
 		for (int j = 0; j < count; j++)
