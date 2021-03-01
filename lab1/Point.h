@@ -47,3 +47,5 @@ void Point1156();
 
 /// @brief Создание рандомных массивов.
 void Point1157();
+
+void Point1158();

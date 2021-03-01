@@ -34,6 +34,7 @@ void Point1158()
 	int* values = ReadArray(count); //утечка
 	cout << "Count is: " << CountPositiveValues(values, count) << endl;
 
+	//TODO: не думаю, что правильно. Подумай. В чем отличие delete от delete[]?
 	//исправление
 	/*
 	 * int*removable = values;

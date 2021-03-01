@@ -19,12 +19,14 @@ int GetElementConsole()
 
 void Point1151()
 {
+	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	double* data = new double[10];
 	for(int i = 0; i < 10; i++)
 	{
 		data[i] = static_cast<double>(i)/2;
 	}
 	std::cout << "Array of double: \n";
+	//TODO: Дубль как и Point1121.cpp
 	for (int i = 0; i < 10; i++)
 	{
 		std::cout << data[i] << " ";
@@ -35,6 +37,7 @@ void Point1151()
 
 void Point1152()
 {
+	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	bool* data = new bool[10];
 	for (int i = 0; i < 10; i++)
 	{
@@ -64,6 +67,7 @@ void Point1153()
 		std::cin >> data[i];
 	}
 	std::cout << "Your char array is: \n";
+	//TODO: Дубль
 	for (int i = 0; i < n; i++)
 	{
 		std::cout << data[i] << ' ';
@@ -91,6 +95,7 @@ void BubbleSort(double*& data)
 
 void Point1154()
 {
+	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	double* data = new double[10];
 	
 	for (int i = 0; i < 10; i++)
@@ -99,6 +104,7 @@ void Point1154()
 	}
 	
 	std::cout << "Array of double: \n";
+	//TODO: Дубль
 	for (int i = 0; i < 10; i++)
 	{
 		std::cout << data[i] << " ";
@@ -107,6 +113,7 @@ void Point1154()
 	BubbleSort(data);
 	
 	std::cout << "\nSorted array of double: \n";
+	//TODO: Дубль
 	for (int i = 0; i < 10; i++)
 	{
 		std::cout << data[i] << ' ';
@@ -118,6 +125,7 @@ void Point1154()
 
 void Point1155()
 {
+	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	int* data = new int[10];
 
 	for (int i = 0; i < 10; i++)
@@ -126,6 +134,7 @@ void Point1155()
 	}
 
 	std::cout << "Int array: \n";
+	//TODO: Дубль
 	for (int i = 0; i < 10; i++)
 	{
 		std::cout << data[i] << " ";
@@ -149,6 +158,7 @@ void Point1155()
 
 void Point1156()
 {
+	//TODO: А если я попрошу количество элементов не 15, а 999999999999999? Может проще создать константу?
 	char* data = new char[15];
 
 	for (int i = 0; i < 15; i++)
@@ -157,6 +167,7 @@ void Point1156()
 	}
 
 	std::cout << "Char array is: \n";
+	//TODO: Дубль
 	for (int i = 0; i < 15; i++)
 	{
 		std::cout << data[i] << " ";
@@ -186,6 +197,7 @@ int* MakeRandomArray(const int arraySize)
 	}
 
 	std::cout << "\nArray ";
+	//TODO: Дубль
 	for(int i = 0; i < arraySize; i++)
 	{
 		std::cout << data[i] << " ";
@@ -202,4 +214,5 @@ void Point1157()
 	int* data2 = MakeRandomArray(8);
 	delete[] data2;
 	int* data3 = MakeRandomArray(13);
+	//TODO: Нет освобождения памяти
 }

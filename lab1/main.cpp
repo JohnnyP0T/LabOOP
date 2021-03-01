@@ -35,6 +35,7 @@ int main()
 	
 	while(true)
 	{
+		//TODO: После выполнения пропадает меню
 		std::cout << "\nEnter point: \n";
 		const int valueMenu = GetElementConsoleInt();
 		switch (valueMenu)
@@ -123,6 +124,7 @@ int main()
 			system("pause");
 			break;
 			}
+			//TODO:нет задания 1.1.5.8
 		case 1:
 			{
 				//TODO дополнительное задание

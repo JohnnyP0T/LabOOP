@@ -20,14 +20,16 @@ double GetElementConsole()
 
 void Point1121()
 {
+	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	std::array<int, 10> data;
 	for(int i = 0; i < 10; i++)
 	{
 		data[i] = rand() % 10;
 	}
-	
+
 	std::cout << "Source array is: ";
 
+	//TODO: Дубль
 	for (auto var : data)
 	{
 		std::cout << var << " ";
@@ -35,8 +37,9 @@ void Point1121()
 	
 	std::cout << "\nSorted array is: ";
 
+	//TODO: Нужно реализовать свою сортировку массива
 	std::sort(data.begin(), data.end());
-	
+	//TODO: Дубль
 	for(auto var : data)
 	{
 		std::cout << var << " ";
@@ -46,14 +49,16 @@ void Point1121()
 
 void Point1122()
 {
+	//TODO: А если я попрошу количество элементов не 12, а 999999999999999? Может проще создать константу?
 	std::array<double, 12> data;
 	for (int i = 0; i < 12; i++)
 	{
 		data[i] = static_cast<double>(rand()) / RAND_MAX * 100;
 	}
-
+	
 	std::cout << "Source array is: ";
 
+	//TODO: Дубль
 	for (auto var : data)
 	{
 		std::cout << var << " ";
@@ -77,7 +82,7 @@ void Point1122()
 void Point1123()
 {
 	std::cout << "Enter array of 8 chars \n";
-	
+	//TODO: А если я попрошу количество элементов не 8, а 999999999999999? Может проще создать константу?
 	std::array<char, 8> data;
 	for (int i = 0; i < 8; i++)
 	{
@@ -87,6 +92,7 @@ void Point1123()
 
 	std::cout << "\nYour array is: ";
 
+	//TODO: Дубль
 	for (auto var : data)
 	{
 		std::cout << var << " ";
