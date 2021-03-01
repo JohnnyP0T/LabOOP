@@ -139,14 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="EducationForm.h" />
+    <ClInclude Include="Genre.h" />
     <ClInclude Include="IOMenu.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Season.h" />
+    <ClInclude Include="SmartphoneManufacturer.h" />
+    <ClInclude Include="WeekDay.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Genre.cpp" />
     <ClCompile Include="IOMenu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point2211.cpp" />
-    <ClCompile Include="Point2221.cpp" />
+    <ClCompile Include="Point2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
