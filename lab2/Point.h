@@ -28,7 +28,7 @@ struct Movie
 {
 	/// @brief Название.
 	std::string Name;
-	/// @brief Продолжительность.	
+	/// @brief Продолжительность.
 	int Duration;
 	/// @brief Год.
 	int Year;
