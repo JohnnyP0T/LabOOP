@@ -1,6 +1,3 @@
-//TODO: Название .cpp не соответствует .h
-//TODO: Каждый класс, структура (и их функции), перечисления в отдельных .cpp и .h файлах
-// - разделение реализации на *.h и *.cpp файлы (с 3-ей лабораторной работы)
 #include <iostream>
 #include <string>
 
@@ -111,7 +108,6 @@ void DemoRectangle()
 			std::getline(std::cin, rectangleLocal.Color);
 			std::cout << "Length(положительное число): \n";
 			rectangleLocal.Length = GetElementConsoleDouble();
-			//TODO: Может лучше вызывать исключение?
 			while (rectangleLocal.Length < 0)
 			{
 				std::cout << "положительное число/ попробуйте еще\n";
@@ -119,13 +115,11 @@ void DemoRectangle()
 			}
 			std::cout << "Width(положительное число): \n";
 			rectangleLocal.Width = GetElementConsoleDouble();
-			//TODO: Может лучше вызывать исключение?
 			while (rectangleLocal.Width < 0)
 			{
 				std::cout << "положительное число/ попробуйте еще\n";
 				rectangleLocal.Width = GetElementConsoleDouble();
 			}
-			//TODO: Дубль
 			WriteRectangle(rectangleLocal);
 			
 			return;
@@ -134,7 +128,6 @@ void DemoRectangle()
 		if(choice == 2)
 		{
 			Rectangle* rectanglePoint = &rectangle[0];
-			//TODO: Дубль
 			std::cout << "rectangle point: ";
 			WriteRectangle(*rectanglePoint);
 			
@@ -143,7 +136,6 @@ void DemoRectangle()
 			rectangle->Color = "purple";
 
 			Rectangle* rectangleNewPoint = rectanglePoint;
-			//TODO: Дубль
 			std::cout << "rectangle new point: ";
 			WriteRectangle(*rectangleNewPoint);
 			
@@ -155,7 +147,6 @@ void DemoRectangle()
 			std::cout << "До вызова функции Exchange\n";
 			for (auto& item : rectangle)
 			{
-				//TODO: Дубль
 				WriteRectangle(item);
 			}
 			
@@ -165,7 +156,6 @@ void DemoRectangle()
 
 			for (auto& item : rectangle)
 			{
-				//TODO: Дубль
 				WriteRectangle(item);
 			}
 			
@@ -175,7 +165,7 @@ void DemoRectangle()
 		if(choice == 4)
 		{
 			for (auto& item : rectangle)
-			{//TODO: Дубль
+			{
 				WriteRectangle(item);
 			}
 			
@@ -187,7 +177,7 @@ void DemoRectangle()
 		if (choice == 5)
 		{
 			for (auto& item : rectangle)
-			{//TODO: Дубль
+			{
 				WriteRectangle(item);
 			}
 
@@ -240,7 +230,7 @@ void DemoFlight()
 		if(choice == 0)
 		{
 			for (auto& item : flight)
-			{//TODO: Дубль
+			{
 				WriteFlight(item);
 			}
 			
@@ -258,7 +248,6 @@ void DemoFlight()
 			std::getline(std::cin, flightLocale.Destination);
 			std::cout << "FlightTime(minutes): \n";
 			flightLocale.FlightTime = GetElementConsoleInt();
-			//TODO: Дубль
 			WriteFlight(flightLocale);
 			
 			return;
@@ -267,7 +256,6 @@ void DemoFlight()
 		if(choice == 2)
 		{
 			Flight* flightPoint = &flight[0];
-			//TODO: Дубль
 			WriteFlight(*flightPoint);
 
 			flightPoint->DeparturePoint = "new point";
@@ -275,7 +263,6 @@ void DemoFlight()
 			flightPoint->FlightTime = 100;
 
 			Flight* flightNewPoint = flightPoint;
-			//TODO: Дубль
 			WriteFlight(*flightNewPoint);
 			
 			return;
@@ -330,7 +317,7 @@ void DemoMovie()
 		if (choice == 0)
 		{
 			for (auto& item : movie)
-			{//TODO: Дубль
+			{
 				WriteMovie(item);
 			}
 
@@ -354,7 +341,6 @@ void DemoMovie()
 			std::cout << "Genre: \n";
 			std::cin.get();
 			std::getline(std::cin, movieLocale.Genre);
-			//TODO: Дубль
 			WriteMovie(movieLocale);
 
 			return;
@@ -363,7 +349,6 @@ void DemoMovie()
 		if(choice == 2)
 		{
 			Movie* moviePoint = &movie[0];
-			//TODO: Дубль
 			WriteMovie(*moviePoint);
 
 			moviePoint->Name = "new name";
@@ -373,7 +358,6 @@ void DemoMovie()
 			moviePoint->Genre = "new Genre";
 
 			Movie* movieNewPoint = moviePoint;
-			//TODO: Дубль
 			WriteMovie(*movieNewPoint);
 
 			return;
@@ -424,7 +408,7 @@ void DemoTime()
 		if(choice == 0)
 		{
 			for (auto& item : time)
-			{//TODO: Дубль
+			{
 				WriteTime(item);
 			}
 			
@@ -467,7 +451,7 @@ void DemoTime()
 			{
 				timeLocale.Hours = 0;
 			}
-			//TODO: Дубль
+			
 			WriteTime(timeLocale);
 
 			return;
@@ -476,7 +460,6 @@ void DemoTime()
 		if(choice == 2)
 		{
 			Time* timePoint = &time[0];
-			//TODO: Дубль
 			WriteTime(*timePoint);
 
 			timePoint->Seconds = 34;
@@ -484,7 +467,6 @@ void DemoTime()
 			timePoint->Hours = 23;
 
 			Time* timeNewPoint = timePoint;
-			//TODO: Дубль
 			WriteTime(*timeNewPoint);
 
 			return;
@@ -561,7 +543,6 @@ void DemoDynamicFlight()
 	flight->DeparturePoint = "piter";
 	flight->Destination = "novokuz";
 	flight->FlightTime = 4;
-	//TODO: Дубль
 	WriteFlight(*flight);
 	
 	delete flight;
@@ -581,7 +562,7 @@ void FindShortestFlight(Flight* flights, int count)
 			index = i;
 		}
 	}
-	//TODO: Дубль
+
 	std::cout << "Самый короткий рейс: \n";
 	WriteFlight(flights[index]);
 }
@@ -597,7 +578,7 @@ void DemoDynamicFlights()
 	};
 
 	for (int i = 0; i < 3; i++)
-	{//TODO: Дубль
+	{
 		WriteFlight(flight[i]);
 	}
 
