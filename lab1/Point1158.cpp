@@ -38,7 +38,7 @@ void Point1158()
 	//исправление
 	/*
 	 * int*removable = values;
-	 * delete removable;
+	 * delete[] removable; Понял, надо было поставить скобки[]
 	 */
 	
 	count = 20;
@@ -46,4 +46,4 @@ void Point1158()
 	cout << "Count is: " << CountPositiveValues(values, count) << endl;
 
 	delete[] values;
-}
+}
