@@ -37,7 +37,6 @@ int main()
 			<< "1156 - поиск букв в массиве символов\n"
 			<< "1157 - создание рандомных массивов\n"
 			<< "1158 - проверка на утечку памяти\n";
-		//TODO: После выполнения пропадает меню
 		std::cout << "\nEnter point: \n";
 		const int valueMenu = GetElementConsoleInt();
 		switch (valueMenu)
@@ -132,7 +131,6 @@ int main()
 			system("pause");
 			break;
 			}
-			//TODO:нет задания 1.1.5.8
 		case 1:
 			{
 				//TODO дополнительное задание

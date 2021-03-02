@@ -22,7 +22,8 @@ double GetElementConsole()
 	}
 }
 
-
+//TODO: Можно объединить с помощью template<typename T>. Почитай о нем...
+//TODO: И можно перенести в отдельный файл, чтобы дубли не встречались в других файлах
 void WriteArray(std::array<int, sizePoint1121> data)
 {
 	for (auto var : data)
@@ -52,7 +53,6 @@ void WriteArray(std::array<char, sizePoint1123> data)
 
 void Point1121()
 {
-	//TODO: А если я попрошу количество элементов не 10, а 999999999999999? Может проще создать константу?
 	std::array<int, sizePoint1121> data;
 	for(int i = 0; i < sizePoint1121; i++)
 	{
@@ -61,22 +61,20 @@ void Point1121()
 
 	std::cout << "Source array is: ";
 
-	//TODO: Дубль
 	WriteArray(data);
 	
 	std::cout << "\nSorted array is: ";
 
 	//TODO: Нужно реализовать свою сортировку массива
 	//делал в других заданиях/ специально использовал std::array что бы попробовать воспользоваться этой сортировкой
+	//TODO: В задании написано реализовать сортировку, вот я и написал об этом
 	std::sort(data.begin(), data.end());
-	//TODO: Дубль
 	WriteArray(data);
 }
 
 
 void Point1122()
 {
-	//TODO: А если я попрошу количество элементов не 12, а 999999999999999? Может проще создать константу?
 	std::array<double, sizePoint1122> data;
 	for (int i = 0; i < sizePoint1122; i++)
 	{
@@ -85,7 +83,6 @@ void Point1122()
 	
 	std::cout << "Source array is: ";
 
-	//TODO: Дубль
 	WriteArray(data);
 
 	std::cout << "\nEnter searching value: ";
@@ -106,7 +103,6 @@ void Point1122()
 void Point1123()
 {
 	std::cout << "Enter array of 8 chars \n";
-	//TODO: А если я попрошу количество элементов не 8, а 999999999999999? Может проще создать константу?
 	std::array<char, sizePoint1123> data;
 	for (int i = 0; i < sizePoint1123; i++)
 	{
@@ -116,7 +112,6 @@ void Point1123()
 
 	std::cout << "\nYour array is: ";
 
-	//TODO: Дубль
 	WriteArray(data);
 
 	std::cout << "\nAll letters in your array:\n";
