@@ -117,7 +117,7 @@ void Point1123()
 	std::cout << "\nAll letters in your array:\n";
 	for (auto var : data)
 	{
-		if(static_cast<int>(var) >= 97 && static_cast<int>(var) <=122)
+		if(static_cast<int>(var) >= 'a' && static_cast<int>(var) <= 'z')
 			std::cout << var << " ";
 	}
 }

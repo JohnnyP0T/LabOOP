@@ -53,10 +53,12 @@ void Point1152()
 	std::cout << "Array of bool: \n";
 	for (int i = 0; i < sizePoint115; i++)
 	{
+		std::cout << (data[i] ? "true " : "false ");
+		/*
 		if (data[i])
 			std::cout << "true ";
 		else
-			std::cout << "false ";
+			std::cout << "false ";*/
 	}
 	delete[] data;
 }
