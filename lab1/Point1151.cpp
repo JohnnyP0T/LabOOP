@@ -54,11 +54,6 @@ void Point1152()
 	for (int i = 0; i < sizePoint115; i++)
 	{
 		std::cout << (data[i] ? "true " : "false ");
-		/*
-		if (data[i])
-			std::cout << "true ";
-		else
-			std::cout << "false ";*/
 	}
 	delete[] data;
 }

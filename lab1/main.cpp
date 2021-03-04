@@ -130,10 +130,6 @@ int main()
 			system("pause");
 			break;
 			}
-		case 1:
-			{
-				//TODO дополнительное задание
-			}
 		default:
 			{
 			std::cout << "error input\n";

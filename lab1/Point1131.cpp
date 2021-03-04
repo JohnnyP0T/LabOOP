@@ -3,9 +3,25 @@
 #include <iostream>
 
 
-double GetPower(const double base, const int exponent)
+double GetPower(double base, int exponent)
 {
-	return std::pow(base, exponent);
+	double result = 1;
+
+	if (exponent < 0) {
+		exponent = -exponent;
+		for (long i = 0; i < exponent; i++) {
+			result *= base;
+		}
+
+		return 1 / result;
+	}
+	else {
+		for (long i = 0; i < exponent; i++) {
+			result *= base;
+		}
+
+		return result;
+	}
 }
 
 
