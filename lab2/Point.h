@@ -6,8 +6,10 @@ struct Rectangle
 {
 	/// @brief Длина.
 	double Length;
+
 	/// @brief Ширина.
 	double Width;
+
 	/// @brief Цвет.
 	std::string Color;
 };
@@ -17,8 +19,10 @@ struct Flight
 {
 	/// @brief Пункт вылета.
 	std::string DeparturePoint;
+
 	/// @brief Пункт назначения.
 	std::string Destination;
+
 	/// @brief Время полета в минутах.
 	int FlightTime;
 };
@@ -28,12 +32,16 @@ struct Movie
 {
 	/// @brief Название.
 	std::string Name;
+
 	/// @brief Продолжительность.
 	int Duration;
+
 	/// @brief Год.
 	int Year;
+
 	/// @brief Жанр.
 	std::string Genre;
+
 	/// @brief Рейтинг.
 	double Rating;
 };
@@ -44,12 +52,16 @@ struct MovieWithGenre
 {
 	/// @brief Название.
 	std::string Name;
+
 	/// @brief Продолжительность.	
 	int Duration;
+
 	/// @brief Год.
 	int Year;
+
 	/// @brief Жанр.
 	Genre Genre;
+
 	/// @brief Рейтинг.
 	double Rating;
 };
@@ -60,8 +72,10 @@ struct Time
 {
 	/// @brief Часы.
 	int Hours;
+
 	/// @brief Минуты.
 	int Minutes;
+
 	/// @brief Секунды.
 	int Seconds;
 };
@@ -73,6 +87,7 @@ struct Contact
 {
 	/// @brief Имя.
 	std::string Name;
+
 	/// @brief Номер.
 	std::string PhoneNumber;
 };
@@ -82,8 +97,10 @@ struct Song
 {
 	/// @brief Автор.
 	std::string NameAuthor;
+
 	/// @brief Название.
 	std::string NameSong;
+
 	/// @brief Продолжительность.
 	int Duration;
 };
@@ -93,8 +110,10 @@ struct Discipline
 {
 	/// @brief Название.
 	std::string Name;
+
 	/// @brief Имя преподавателя.
 	std::string NameTeacher;
+
 	/// @brief Оценка.
 	int Rating;
 };

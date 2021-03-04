@@ -1,5 +1,6 @@
 #pragma once
 
+/// @brief Дни недели.
 enum  WeekDay
 {
 	Monday,
