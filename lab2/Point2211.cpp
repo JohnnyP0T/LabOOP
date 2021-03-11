@@ -4,7 +4,6 @@
 #include "Point.h"
 
 
-
 // сортирует массив вещественных чисел
 void Sort(double* values, int count)
 {

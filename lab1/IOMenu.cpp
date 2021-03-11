@@ -6,8 +6,8 @@ double GetElementConsoleDouble()
     while (true) // цикл продолжается до тех пор, пока пользователь не введет корректное значение
     {
         std::cout << "Enter a double value: ";
-        double a;
-        std::cin >> a;
+        double value;
+        std::cin >> value;
 
         // Проверка на предыдущее извлечение
         if (std::cin.fail()) // если предыдущее извлечение оказалось неудачным,
@@ -20,7 +20,7 @@ double GetElementConsoleDouble()
         {
             std::cin.ignore(32767, '\n'); // удаляем лишние значения
 
-            return a;
+            return value;
         }
     }
 }
@@ -30,8 +30,8 @@ int GetElementConsoleInt()
 {
     while (true) // цикл продолжается до тех пор, пока пользователь не введет корректное значение
     {
-        int a;
-        std::cin >> a;
+        int value;
+        std::cin >> value;
 
         // Проверка на предыдущее извлечение
         if (std::cin.fail()) // если предыдущее извлечение оказалось неудачным,
@@ -44,7 +44,7 @@ int GetElementConsoleInt()
         {
             std::cin.ignore(32767, '\n'); // удаляем лишние значения
 
-            return a;
+            return value;
         }
     }
 }

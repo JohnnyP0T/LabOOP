@@ -5,23 +5,24 @@
 
 double GetPower(double base, int exponent)
 {
-	double result = 1;
-
-	if (exponent < 0) {
-		exponent = -exponent;
-		for (long i = 0; i < exponent; i++) {
-			result *= base;
-		}
-
-		return 1 / result;
+	double tmp;
+	
+	if (exponent == 0)
+	{
+		return 1;
 	}
-	else {
-		for (long i = 0; i < exponent; i++) {
-			result *= base;
-		}
 
-		return result;
+	if(exponent < 0)
+	{
+		return GetPower(1 / base, -exponent);
 	}
+
+	if(exponent % 2 != 0)
+	{
+		return base * GetPower(base, exponent - 1);
+	}
+
+	return GetPower(base * base, exponent / 2);
 }
 
 
