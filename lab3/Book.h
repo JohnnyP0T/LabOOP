@@ -1,36 +1,36 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 
-/// @brief Книга.
+/// @brief РљРЅРёРіР°.
 struct Book
 {
-	/// @brief Название книги.
+	/// @brief РќР°Р·РІР°РЅРёРµ РєРЅРёРіРё.
 	std::string BookName;
-	/// @brief Год издания.
+	/// @brief Р“РѕРґ РёР·РґР°РЅРёСЏ.
 	int Year;
-	/// @brief Количество страниц.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†.
 	int NumberPages;
-	/// @brief Авторы.
+	/// @brief РђРІС‚РѕСЂС‹.
 	std::string* Authors;
-	/// @brief Количество авторов.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ Р°РІС‚РѕСЂРѕРІ.
 	int NumberAuthors;
 };
 
-/// @brief 3.2.2 Работа с полями-массивами.
+/// @brief 3.2.2 Р Р°Р±РѕС‚Р° СЃ РїРѕР»СЏРјРё-РјР°СЃСЃРёРІР°РјРё.
 void DemoBook();
 
-/// @brief Чтение с консоли полей структуры Книга.
-/// @param book Объект структуры Книга.
+/// @brief Р§С‚РµРЅРёРµ СЃ РєРѕРЅСЃРѕР»Рё РїРѕР»РµР№ СЃС‚СЂСѓРєС‚СѓСЂС‹ РљРЅРёРіР°.
+/// @param book РћР±СЉРµРєС‚ СЃС‚СЂСѓРєС‚СѓСЂС‹ РљРЅРёРіР°.
 void ReadBookFromConsole(Book& book);
 
-/// @brief Вывод на консоль полей структуры Книга.
-/// @param book Объект структуры Книга.
+/// @brief Р’С‹РІРѕРґ РЅР° РєРѕРЅСЃРѕР»СЊ РїРѕР»РµР№ СЃС‚СЂСѓРєС‚СѓСЂС‹ РљРЅРёРіР°.
+/// @param book РћР±СЉРµРєС‚ СЃС‚СЂСѓРєС‚СѓСЂС‹ РљРЅРёРіР°.
 void WriteBookToConsole(Book& book);
 
-/// @brief Поиск книги по автору.
-/// @param books Массив книг.
-/// @param booksCount Количество книг.
-/// @param author Автор для поиска.
-/// @return Индекс.
+/// @brief РџРѕРёСЃРє РєРЅРёРіРё РїРѕ Р°РІС‚РѕСЂСѓ.
+/// @param books РњР°СЃСЃРёРІ РєРЅРёРі.
+/// @param booksCount РљРѕР»РёС‡РµСЃС‚РІРѕ РєРЅРёРі.
+/// @param author РђРІС‚РѕСЂ РґР»СЏ РїРѕРёСЃРєР°.
+/// @return РРЅРґРµРєСЃ.
 int FindBookByAuthor(Book* books, int booksCount, std::string& author);

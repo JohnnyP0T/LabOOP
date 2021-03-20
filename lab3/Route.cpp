@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #include "Route.h"
 #include "IO.h"
@@ -11,7 +11,7 @@ void DemoRoute()
 	{
 		ReadRouteFromConsole(routes[i]);
 	}
-	std::cout << "Ââåäèòå íàçâàíèå îñòàíîâêè äëÿ ïîèñêà ìàðøðóòà: " << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°: " << std::endl;
 	std::string stop;
 	std::getline(std::cin, stop);
 	std::cout << std::endl;
@@ -19,7 +19,7 @@ void DemoRoute()
 	int foundIndex = FindRouteTo(routes, COUNT, stop);
 	if (foundIndex < 0)
 	{
-		std::cout << "Íå íàéäåíî" << std::endl;
+		std::cout << "ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << std::endl;
 	}
 	else
 	{
@@ -29,23 +29,23 @@ void DemoRoute()
 
 void ReadRouteFromConsole(Route& route)
 {
-	std::cout << "Íîìåð ìàðøðóòà: ";
+	std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°: ";
 	route.RouteNumber = ReadPositiveNumber();
 	std::cout << std::endl;
-	std::cout << "Ïðîäîëæèòåëüíîñòü ìàðøðóòà â ìèíóòàõ: ";
+	std::cout << "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð° Ð² Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…: ";
 	route.DurationInMitutes = ReadPositiveNumber();
 	std::cout << std::endl;
-	std::cout << "×àñòîòà ìàðøðóòà â ìèíóòàõ: ";
+	std::cout << "Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð° Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð° Ð² Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…: ";
 	route.FrequencyInMitutes = ReadPositiveNumber();
 	std::cout << std::endl;
-	std::cout << "Êîëè÷åòñâî îñòàíîâîê: ";
+	std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑ‚ÑÐ²Ð¾ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð¾Ðº: ";
 	route.NumberStops = ReadPositiveNumber();
 	std::cout << std::endl;
 
 	route.Stops = new std::string[route.NumberStops];
 	for (int i = 0; i < route.NumberStops; i++)
 	{
-		std::cout << "Ââåäèòå îñòàíîâêó: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÑƒ: ";
 		getline(std::cin, route.Stops[i]);
 		std::cout << std::endl;
 	}
@@ -53,10 +53,10 @@ void ReadRouteFromConsole(Route& route)
 
 void WriteRouteToConsole(Route& route)
 {
-	std::cout << "Íîìåð ìàðøðóòà: " << route.RouteNumber << std::endl;
-	std::cout << "Ïðîäîëæèòåëüíîñòü ìàðøðóòà â ìèíóòàõ: " << route.DurationInMitutes << std::endl;
-	std::cout << "×àñòîòà ìàðøðóòà â ìèíóòàõ: " << route.FrequencyInMitutes << std::endl;
-	std::cout << "Ìàðøóðò: " << std::endl;
+	std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°: " << route.RouteNumber << std::endl;
+	std::cout << "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð° Ð² Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…: " << route.DurationInMitutes << std::endl;
+	std::cout << "Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð° Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð° Ð² Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…: " << route.FrequencyInMitutes << std::endl;
+	std::cout << "ÐœÐ°Ñ€ÑˆÑƒÑ€Ñ‚: " << std::endl;
 	for (int i = 0; i < route.NumberStops - 1; i++)
 	{
 		std::cout << route.Stops[i] << "->";

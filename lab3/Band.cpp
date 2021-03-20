@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 
 #include "Band.h"
@@ -212,20 +212,20 @@ void DemoBand()
 	}
 	else
 	{
-		std::cout << "Íå íàéäåíî" << std::endl;
+		std::cout << "ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << std::endl;
 	}
 
 	Album* foundAlbum = band->FindAlbum(songs2[2]);
 	if (foundAlbum != nullptr)
 	{
-		std::cout << "Íàçâàíèå àëüáîìà: " << foundAlbum->GetAlbumTitle() << '\t'
-			<< "Ãîä âûïóñêà: " << foundAlbum->GetIssueYear()
-			<< '\t' << "Êîëè÷åñòâî ïåñåí: " << foundAlbum->GetSongsCount()
+		std::cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð°: " << foundAlbum->GetAlbumTitle() << '\t'
+			<< "Ð“Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ°: " << foundAlbum->GetIssueYear()
+			<< '\t' << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿ÐµÑÐµÐ½: " << foundAlbum->GetSongsCount()
 			<< std::endl << std::endl;
 	}
 	else
 	{
-		std::cout << "Íå íàéäåíî" << std::endl;
+		std::cout << "ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << std::endl;
 	}
 
 	int allSongsCount;

@@ -1,51 +1,51 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 #include "Genre.h"
 
-/// @brief Песня.
+/// @brief РџРµСЃРЅСЏ.
 class Song
 {
 private:
-	/// @brief Название.
+	/// @brief РќР°Р·РІР°РЅРёРµ.
 	std::string _songTitle;
-	/// @brief Продолжительность.
+	/// @brief РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ.
 	int _durationInSeconds;
-	/// @brief Жанр.
+	/// @brief Р–Р°РЅСЂ.
 	Genre _songGenre;
 
 public:
-	/// @brief Сетер названия.
-	/// @param songTitle Название.
+	/// @brief РЎРµС‚РµСЂ РЅР°Р·РІР°РЅРёСЏ.
+	/// @param songTitle РќР°Р·РІР°РЅРёРµ.
 	void SetSongTitle(std::string& songTitle);
 
-	/// @brief Сетер продолжительности.
-	/// @param durationInSeconds Продолжительность.
+	/// @brief РЎРµС‚РµСЂ РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚Рё.
+	/// @param durationInSeconds РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ.
 	void SetDuration(int durationInSeconds);
 
-	/// @brief Сетер жанра.
-	/// @param genre Жанр.
+	/// @brief РЎРµС‚РµСЂ Р¶Р°РЅСЂР°.
+	/// @param genre Р–Р°РЅСЂ.
 	void SetGenre(Genre genre);
 
-	/// @brief Гетер названия.
-	/// @return Название.
+	/// @brief Р“РµС‚РµСЂ РЅР°Р·РІР°РЅРёСЏ.
+	/// @return РќР°Р·РІР°РЅРёРµ.
 	std::string GetSongTitle() const;
 
-	/// @brief Гетер продолжительности.
-	/// @return продолжительность.
+	/// @brief Р“РµС‚РµСЂ РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚Рё.
+	/// @return РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ.
 	int GetDuration() const;
 
-	/// @brief Гетер жанра.
-	/// @return Жанр.
+	/// @brief Р“РµС‚РµСЂ Р¶Р°РЅСЂР°.
+	/// @return Р–Р°РЅСЂ.
 	Genre GetSongGenre() const;
 
-	/// @brief Вывод песни.
+	/// @brief Р’С‹РІРѕРґ РїРµСЃРЅРё.
 	std::string WriteSong() const;
 
-	/// @brief Конструктор.
-	/// @param songTitle Название.
-	/// @param durationInSeconds Продолжительность.
-	/// @param songGenre Жанр.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param songTitle РќР°Р·РІР°РЅРёРµ.
+	/// @param durationInSeconds РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ.
+	/// @param songGenre Р–Р°РЅСЂ.
 	Song(std::string& songTitle, int durationInSeconds,
 		Genre songGenre);
 };

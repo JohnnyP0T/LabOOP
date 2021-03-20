@@ -1,48 +1,48 @@
-#pragma once
+п»ї#pragma once
 
 #include "Point.h"
 
-/// @brief Прямоугольник.
+/// @brief РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє.
 class Rectangle
 {
 private:
-	/// @brief Центр.
+	/// @brief Р¦РµРЅС‚СЂ.
 	Point* _center;
-	/// @brief Длина.
+	/// @brief Р”Р»РёРЅР°.
 	double _length;
-	/// @brief Ширина.
+	/// @brief РЁРёСЂРёРЅР°.
 	double _width;
 public:
-	/// @brief Конструктор.
-	/// @param point Центр.
-	/// @param length Длина.
-	/// @param width Ширина.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param point Р¦РµРЅС‚СЂ.
+	/// @param length Р”Р»РёРЅР°.
+	/// @param width РЁРёСЂРёРЅР°.
 	Rectangle(Point* center, double length, double width);
 	
-	/// @brief Сетер для поля центр.
-	/// @param center Центр.
+	/// @brief РЎРµС‚РµСЂ РґР»СЏ РїРѕР»СЏ С†РµРЅС‚СЂ.
+	/// @param center Р¦РµРЅС‚СЂ.
 	void SetCenter(Point* center);
 	
-	/// @brief Сетер для длины.
-	/// @param length Длина.
+	/// @brief РЎРµС‚РµСЂ РґР»СЏ РґР»РёРЅС‹.
+	/// @param length Р”Р»РёРЅР°.
 	void SetLength(double length);
 	
-	/// @brief Сетер для ширины.
-	/// @param width Ширина.
+	/// @brief РЎРµС‚РµСЂ РґР»СЏ С€РёСЂРёРЅС‹.
+	/// @param width РЁРёСЂРёРЅР°.
 	void SetWidth(double width);
 
-	/// @brief Гетер для центра.
-	/// @return Центр.
+	/// @brief Р“РµС‚РµСЂ РґР»СЏ С†РµРЅС‚СЂР°.
+	/// @return Р¦РµРЅС‚СЂ.
 	Point* GetCenter() const;
 
-	/// @brief Гетер для длины.
-	/// @return Длина.
+	/// @brief Р“РµС‚РµСЂ РґР»СЏ РґР»РёРЅС‹.
+	/// @return Р”Р»РёРЅР°.
 	double GetLength() const;
 
-	/// @brief Гетер для ширины.
-	/// @return Ширина.
+	/// @brief Р“РµС‚РµСЂ РґР»СЏ С€РёСЂРёРЅС‹.
+	/// @return РЁРёСЂРёРЅР°.
 	double GetWidth() const;
 };
 
-/// @brief 3.3.4 - Агрегирование.
+/// @brief 3.3.4 - РђРіСЂРµРіРёСЂРѕРІР°РЅРёРµ.
 void DemoRectangleWithPoint();

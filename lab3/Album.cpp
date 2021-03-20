@@ -1,4 +1,4 @@
-#include <exception>
+ï»¿#include <exception>
 #include <string>
 
 #include "Album.h"
@@ -29,7 +29,7 @@ void Album::SetIssueYear(const int issueYear)
 {
 	if (issueYear < 0)
 	{
-		throw std::exception("Ãîä âûïóñêà íå ìîæåò áûòü îòðèöàòåëüíûì");
+		throw std::exception("Ð“Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼");
 	}
 	this->_issueYear = issueYear;
 }

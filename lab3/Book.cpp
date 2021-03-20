@@ -1,4 +1,4 @@
-#pragma warning(disable : 4996) //_CRT_SECURE_NO_WARNINGS Ошибка localtime.
+п»ї#pragma warning(disable : 4996) //_CRT_SECURE_NO_WARNINGS РћС€РёР±РєР° localtime.
 
 #include <iostream>
 #include <time.h>
@@ -14,14 +14,14 @@ void DemoBook()
 	{
 		ReadBookFromConsole(books[i]);
 	}
-	std::cout << "Введите автора для поиска книги: " << std::endl;
+	std::cout << "Р’РІРµРґРёС‚Рµ Р°РІС‚РѕСЂР° РґР»СЏ РїРѕРёСЃРєР° РєРЅРёРіРё: " << std::endl;
 	std::string author;
 	std::getline(std::cin, author);
 	
 	int foundIndex = FindBookByAuthor(books, COUNT, author);
 	if (foundIndex < 0)
 	{
-		std::cout << "Не найдено";
+		std::cout << "РќРµ РЅР°Р№РґРµРЅРѕ";
 	}
 	else
 	{
@@ -37,13 +37,13 @@ void DemoBook()
 
 void ReadBookFromConsole(Book& book)
 {
-	std::cout << "Введите название книги: ";
+	std::cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєРЅРёРіРё: ";
 	std::getline(std::cin, book.BookName);
 	std::cout << std::endl;
 
 	while (true)
 	{
-		std::cout << "Введите год издания: ";
+		std::cout << "Р’РІРµРґРёС‚Рµ РіРѕРґ РёР·РґР°РЅРёСЏ: ";
 		book.Year = GetElementConsoleInt();
 		std::cout << std::endl;
 
@@ -58,7 +58,7 @@ void ReadBookFromConsole(Book& book)
 
 		if(book.Year < 0 || book.Year > calendarTime->tm_year + firstYear)
 		{
-			std::cout << "Некорректный год, попробуйте еще\n";
+			std::cout << "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РіРѕРґ, РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ\n";
 		}
 		else
 		{
@@ -66,18 +66,18 @@ void ReadBookFromConsole(Book& book)
 		}
 	}
 
-	std::cout << "Введите количество страниц: ";
+	std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†: ";
 	book.NumberPages = ReadPositiveNumber();
 	std::cout << std::endl;
 
 	while (true)
 	{
-		std::cout << "Введите количество авторов: ";
+		std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р°РІС‚РѕСЂРѕРІ: ";
 		book.NumberAuthors = ReadPositiveNumber();
 		std::cout << std::endl;
 		if(book.NumberAuthors < 1 || book.NumberAuthors > 10)
 		{
-			std::cout << "Количество авторов должно быть в диапазоне 1-10. Повторите ввод \n";
+			std::cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ Р°РІС‚РѕСЂРѕРІ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІ РґРёР°РїР°Р·РѕРЅРµ 1-10. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ \n";
 		}
 		else
 		{
@@ -88,7 +88,7 @@ void ReadBookFromConsole(Book& book)
 	book.Authors = new std::string[book.NumberAuthors];
 	for(int i = 0; i < book.NumberAuthors; i++)
 	{
-		std::cout << "Введите автора №" << i << ": ";
+		std::cout << "Р’РІРµРґРёС‚Рµ Р°РІС‚РѕСЂР° в„–" << i << ": ";
 		std::getline(std::cin, book.Authors[i]);
 		std::cout << std::endl;
 	}

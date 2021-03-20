@@ -1,4 +1,4 @@
-#include <exception>
+ï»¿#include <exception>
 #include <iostream>
 
 #include "Flight.h"
@@ -176,12 +176,12 @@ void DemoFlightWithTime()
 	for (int i = 0; i < COUNT; i++)
 	{
 		std::cout << flights[i]->GetFlightNumber() << "\t" << flights[i]->GetFrom()
-			<< '-' << flights[i]->GetPurpose() << "\t Âûëåò "
+			<< '-' << flights[i]->GetPurpose() << "\t Ð’Ñ‹Ð»ÐµÑ‚ "
 			<< flights[i]->GetDepartureTime()->GetMonth() << '.'
 			<< flights[i]->GetDepartureTime()->GetDay() << '\t'
 			<< flights[i]->GetDepartureTime()->GetHour() << ':'
 			<< flights[i]->GetDepartureTime()->GetMinute()
-			<< "\tÏðèáûòèå " << flights[i]->GetPurposeTime()->GetMonth()
+			<< "\tÐŸÑ€Ð¸Ð±Ñ‹Ñ‚Ð¸Ðµ " << flights[i]->GetPurposeTime()->GetMonth()
 			<< '.' << flights[i]->GetPurposeTime()->GetDay()
 			<< '\t' << flights[i]->GetPurposeTime()->GetHour() << ':'
 			<< flights[i]->GetPurposeTime()->GetMinute() << std::endl;
@@ -190,7 +190,7 @@ void DemoFlightWithTime()
 	int timeDifference = flights[0]->GetFlightTimeMinutes();
 	int minutesInHour = 60;
 	std::cout << flights[0]->GetFlightNumber() << "\t" << flights[0]->GetFrom()
-		<< '-' << flights[0]->GetPurpose() << "\tÂðåìÿ ïîëåòà: "
+		<< '-' << flights[0]->GetPurpose() << "\tÐ’Ñ€ÐµÐ¼Ñ Ð¿Ð¾Ð»ÐµÑ‚Ð°: "
 		<< timeDifference / minutesInHour << "h "
 		<< timeDifference % minutesInHour << "min" << std::endl;
 
