@@ -4,6 +4,7 @@
 
 #include "Song.h"
 
+
 /// @brief Альбом.
 class Album
 {
