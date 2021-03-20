@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Struct">
+      <UniqueIdentifier>{75380119-3d30-4461-b6eb-238e318ba5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Struct">
+      <UniqueIdentifier>{8c9a6d68-14dc-40da-839b-cfaccdcf0d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserInterface">
+      <UniqueIdentifier>{fa0c781a-575f-4cbf-805e-76b776f29d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface">
+      <UniqueIdentifier>{f977bfaa-c10d-4f8a-945b-7a0520ff0f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Menu">
+      <UniqueIdentifier>{e66fa8ea-ece2-459f-9805-55299cc2d4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu">
+      <UniqueIdentifier>{f4c907d7-f8e2-490e-a41a-2404e38b8a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Class">
+      <UniqueIdentifier>{5c6500d8-1378-4ae1-a6f5-9c2962d0c2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class">
+      <UniqueIdentifier>{6f261cee-b27c-46a0-b92d-436b7a835e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Book.cpp">
+      <Filter>Source Files\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Route.cpp">
+      <Filter>Source Files\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Flight.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Song.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Album.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Band.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Book.h">
+      <Filter>Header Files\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="IO.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Route.h">
+      <Filter>Header Files\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Flight.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Genre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Song.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Album.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Band.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
