@@ -1,78 +1,78 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 
 #include "Album.h"
 
-/// @brief Группа.
+/// @brief Р“СЂСѓРїРїР°.
 class Band
 {
 private:
-	/// @brief Название.
+	/// @brief РќР°Р·РІР°РЅРёРµ.
 	std::string _nameBand;
-	/// @brief Описание.
+	/// @brief РћРїРёСЃР°РЅРёРµ.
 	std::string _description;
-	/// @brief Количество альбомов.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ Р°Р»СЊР±РѕРјРѕРІ.
 	int _albumsCount;
-	/// @brief Альбомы.
+	/// @brief РђР»СЊР±РѕРјС‹.
 	Album** _albums = nullptr;
 
 public:
-	/// @brief Сетер названия.
-	/// @param nameBand Название.
+	/// @brief РЎРµС‚РµСЂ РЅР°Р·РІР°РЅРёСЏ.
+	/// @param nameBand РќР°Р·РІР°РЅРёРµ.
 	void SetNameBand(std::string& nameBand);
 
-	/// @brief Сетер описания.
-	/// @param description Описание.
+	/// @brief РЎРµС‚РµСЂ РѕРїРёСЃР°РЅРёСЏ.
+	/// @param description РћРїРёСЃР°РЅРёРµ.
 	void SetDescription(std::string& description);
 
-	/// @brief Сетер альбома.
-	/// @param albumsCount Количество альбомов.
-	/// @param albums Альбомы.
+	/// @brief РЎРµС‚РµСЂ Р°Р»СЊР±РѕРјР°.
+	/// @param albumsCount РљРѕР»РёС‡РµСЃС‚РІРѕ Р°Р»СЊР±РѕРјРѕРІ.
+	/// @param albums РђР»СЊР±РѕРјС‹.
 	void SetAlbums(int albumsCount, Album** albums);
 
-	/// @brief Поиск песни.
-	/// @param songTitle Название.
-	/// @return Песня.
+	/// @brief РџРѕРёСЃРє РїРµСЃРЅРё.
+	/// @param songTitle РќР°Р·РІР°РЅРёРµ.
+	/// @return РџРµСЃРЅСЏ.
 	Song* FindSong(std::string& songTitle) const;
 
-	/// @brief Поиск альбома.
-	/// @param song Песня.
-	/// @return Альбом.
+	/// @brief РџРѕРёСЃРє Р°Р»СЊР±РѕРјР°.
+	/// @param song РџРµСЃРЅСЏ.
+	/// @return РђР»СЊР±РѕРј.
 	Album* FindAlbum(Song* song) const;
 
-	/// @brief Гетер песен.
-	/// @param allSongsCount Количество песен.
-	/// @return Песни.
+	/// @brief Р“РµС‚РµСЂ РїРµСЃРµРЅ.
+	/// @param allSongsCount РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЃРµРЅ.
+	/// @return РџРµСЃРЅРё.
 	Song** GetAllSongs(int& allSongsCount) const;
 
-	/// @brief Гетер по жанру
-	/// @param findingGenre Жанр.
-	/// @param allSongsCount Количество.
-	/// @return Песни.
+	/// @brief Р“РµС‚РµСЂ РїРѕ Р¶Р°РЅСЂСѓ
+	/// @param findingGenre Р–Р°РЅСЂ.
+	/// @param allSongsCount РљРѕР»РёС‡РµСЃС‚РІРѕ.
+	/// @return РџРµСЃРЅРё.
 	Song** GetAllGenreSongs(Genre findingGenre, int& allSongsCount) const;
 
-	/// @brief Гетер Названия.
-	/// @return Название.
+	/// @brief Р“РµС‚РµСЂ РќР°Р·РІР°РЅРёСЏ.
+	/// @return РќР°Р·РІР°РЅРёРµ.
 	std::string GetNameBand() const;
 
-	/// @brief Гетер описания.
-	/// @return Описание.
+	/// @brief Р“РµС‚РµСЂ РѕРїРёСЃР°РЅРёСЏ.
+	/// @return РћРїРёСЃР°РЅРёРµ.
 	std::string GetDescription() const;
 
-	/// @brief Гетер количества альбомов.
-	/// @return Количество.
+	/// @brief Р“РµС‚РµСЂ РєРѕР»РёС‡РµСЃС‚РІР° Р°Р»СЊР±РѕРјРѕРІ.
+	/// @return РљРѕР»РёС‡РµСЃС‚РІРѕ.
 	int GetAlbumsCount() const;
 
-	/// @brief Гетер Альбомов.
-	/// @return Альбомы.
+	/// @brief Р“РµС‚РµСЂ РђР»СЊР±РѕРјРѕРІ.
+	/// @return РђР»СЊР±РѕРјС‹.
 	Album** GetAlbums() const;
 
-	/// @brief Конструктор
-	/// @param nameBand Название.
-	/// @param description Описание.
-	/// @param albumsCount Количество альбомов.
-	/// @param albums Альбомы.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	/// @param nameBand РќР°Р·РІР°РЅРёРµ.
+	/// @param description РћРїРёСЃР°РЅРёРµ.
+	/// @param albumsCount РљРѕР»РёС‡РµСЃС‚РІРѕ Р°Р»СЊР±РѕРјРѕРІ.
+	/// @param albums РђР»СЊР±РѕРјС‹.
 	Band(std::string& nameBand, std::string& description,
 		int albumsCount, Album** albums);
 
