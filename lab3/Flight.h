@@ -75,6 +75,6 @@ public:
 		Time* purposeTime);
 };
 
-
+//TODO: не является частью класса. Перенеси в другой файл Demo.h и соответственно перенести в cpp файл
 /// @brief - 3.3.9 Агрегирование.
 void DemoFlightWithTime();

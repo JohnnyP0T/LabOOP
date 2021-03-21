@@ -47,11 +47,12 @@ void ReadBookFromConsole(Book& book)
 		book.Year = GetElementConsoleInt();
 		std::cout << std::endl;
 
-		time_t t;
+		time_t t; 
 		struct tm* calendarTime;
 
 		time(&t);
 
+		//TODO: Можно прямо тут инициализировать 
 		calendarTime = localtime(&t);
 
 		int firstYear = 1900;

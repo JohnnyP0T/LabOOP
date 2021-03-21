@@ -24,6 +24,7 @@ public:
 	/// @param month Месяц.
 	void SetMonth(int month);
 
+	//TODO: слились слова
 	/// @brief Сетердня.
 	/// @param day День.
 	void SetDay(int day);
