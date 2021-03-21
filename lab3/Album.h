@@ -1,57 +1,57 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 
 #include "Song.h"
 
-/// @brief Альбом.
+/// @brief РђР»СЊР±РѕРј.
 class Album
 {
 private:
-	/// @brief Название.
+	/// @brief РќР°Р·РІР°РЅРёРµ.
 	std::string _albumTitle;
-	/// @brief Год выпуска.
+	/// @brief Р“РѕРґ РІС‹РїСѓСЃРєР°.
 	int _issueYear;
-	/// @brief Количество песен.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЃРµРЅ.
 	int _songsCount;
-	/// @brief Массив песен.
+	/// @brief РњР°СЃСЃРёРІ РїРµСЃРµРЅ.
 	Song** _songs = nullptr;
 
 public:
-	/// @brief Сетер названия.
-	/// @param albumTitle Название.
+	/// @brief РЎРµС‚РµСЂ РЅР°Р·РІР°РЅРёСЏ.
+	/// @param albumTitle РќР°Р·РІР°РЅРёРµ.
 	void SetAlbumTitle(std::string& albumTitle);
 
-	/// @brief Сетер Года.
-	/// @param issueYear Год.
+	/// @brief РЎРµС‚РµСЂ Р“РѕРґР°.
+	/// @param issueYear Р“РѕРґ.
 	void SetIssueYear(int issueYear);
 
-	/// @brief Сетер песен.
-	/// @param songsCount Количество песен.
-	/// @param songs Массив песен.
+	/// @brief РЎРµС‚РµСЂ РїРµСЃРµРЅ.
+	/// @param songsCount РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЃРµРЅ.
+	/// @param songs РњР°СЃСЃРёРІ РїРµСЃРµРЅ.
 	void SetSongs(int songsCount, Song** songs);
 
-	/// @brief Гетер названия.
-	/// @return Название.
+	/// @brief Р“РµС‚РµСЂ РЅР°Р·РІР°РЅРёСЏ.
+	/// @return РќР°Р·РІР°РЅРёРµ.
 	std::string GetAlbumTitle() const;
 
-	/// @brief Гетер года выпуска.
-	/// @return Год выпуска.
+	/// @brief Р“РµС‚РµСЂ РіРѕРґР° РІС‹РїСѓСЃРєР°.
+	/// @return Р“РѕРґ РІС‹РїСѓСЃРєР°.
 	int GetIssueYear() const;
 
-	/// @brief Гетер количества песен.
-	/// @return Количество песен.
+	/// @brief Р“РµС‚РµСЂ РєРѕР»РёС‡РµСЃС‚РІР° РїРµСЃРµРЅ.
+	/// @return РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЃРµРЅ.
 	int GetSongsCount() const;
 
-	/// @brief Гетер песен.
-	/// @return Песни.
+	/// @brief Р“РµС‚РµСЂ РїРµСЃРµРЅ.
+	/// @return РџРµСЃРЅРё.
 	Song** GetSongs() const;
 
-	/// @brief Конструктор.
-	/// @param albumTitle Название.
-	/// @param issueYear Год выпуска.
-	/// @param songsCount Количество песен.
-	/// @param songs Песни.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param albumTitle РќР°Р·РІР°РЅРёРµ.
+	/// @param issueYear Р“РѕРґ РІС‹РїСѓСЃРєР°.
+	/// @param songsCount РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЃРµРЅ.
+	/// @param songs РџРµСЃРЅРё.
 	Album(std::string& albumTitle, int issueYear, int songsCount,
 		Song** songs);
 

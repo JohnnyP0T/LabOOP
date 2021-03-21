@@ -1,4 +1,4 @@
-#include <exception>
+ï»¿#include <exception>
 
 #include "Time.h"
 
@@ -17,7 +17,7 @@ void Time::SetYear(const int year)
 {
 	if (year < 0)
 	{
-		throw std::exception("Ãîä íå ìîæåò áûòü îòðèöàòåëüíûì");
+		throw std::exception("Ð“Ð¾Ð´ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼");
 	}
 	this->_year = year;
 }
@@ -27,7 +27,7 @@ void Time::SetMonth(const int month)
 {
 	if (month <= 0 || month > 12)
 	{
-		throw std::exception("Íåêîððåêòíûé ìåñÿö");
+		throw std::exception("ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¼ÐµÑÑÑ†");
 	}
 	this->_month = month;
 }
@@ -37,7 +37,7 @@ void Time::SetDay(const int day)
 {
 	if (day <= 0 || day > 30)
 	{
-		throw std::exception("Íåêîððåêòíûé äåíü");
+		throw std::exception("ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð´ÐµÐ½ÑŒ");
 	}
 	this->_day = day;
 }
@@ -57,7 +57,7 @@ void Time::SetMinute(const int minute)
 {
 	if (minute < 0 || minute > 60)
 	{
-		throw std::exception("Íåêîððåêòíîå ÷àñ");
+		throw std::exception("ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ñ‡Ð°Ñ");
 	}
 	this->_minute = minute;
 }

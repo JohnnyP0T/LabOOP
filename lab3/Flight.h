@@ -1,80 +1,80 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 
 #include "Time.h"
 
-/// @brief Авиарейс.
+/// @brief РђРІРёР°СЂРµР№СЃ.
 class Flight
 {
 private:
-	/// @brief Номер рейса.
+	/// @brief РќРѕРјРµСЂ СЂРµР№СЃР°.
 	std::string _flightNumber;
-	/// @brief Пунтк отправления.
+	/// @brief РџСѓРЅС‚Рє РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	std::string _from;
-	/// @brief Пункт назначения.
+	/// @brief РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ.
 	std::string _purpose;
-	/// @brief Время отправления.
+	/// @brief Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	Time* _departureTime;
-	/// @brief Время прибытия.
+	/// @brief Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ.
 	Time* _purposeTime;
 
 public:
-	/// @brief Сетер номера рейса.
-	/// @param flightNumber Номер рейса.
+	/// @brief РЎРµС‚РµСЂ РЅРѕРјРµСЂР° СЂРµР№СЃР°.
+	/// @param flightNumber РќРѕРјРµСЂ СЂРµР№СЃР°.
 	void SetFlightNumber(std::string& flightNumber);
 
-	/// @brief Сетер пунтка отправления.
-	/// @param from Пункт отправления.
+	/// @brief РЎРµС‚РµСЂ РїСѓРЅС‚РєР° РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @param from РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	void SetFrom(std::string& from);
 
-	/// @brief Сетер пункта назначения.
-	/// @param purpose Пункт назначения.
+	/// @brief РЎРµС‚РµСЂ РїСѓРЅРєС‚Р° РЅР°Р·РЅР°С‡РµРЅРёСЏ.
+	/// @param purpose РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ.
 	void SetPurpose(std::string& purpose);
 
-	/// @brief Сетер времени отправления.
-	/// @param departureTime Время отправления.
+	/// @brief РЎРµС‚РµСЂ РІСЂРµРјРµРЅРё РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @param departureTime Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	void SetDepartureTime(Time* departureTime);
 
-	/// @brief Сетер времени прибытия.
-	/// @param purposeTime Время прибытия.
+	/// @brief РЎРµС‚РµСЂ РІСЂРµРјРµРЅРё РїСЂРёР±С‹С‚РёСЏ.
+	/// @param purposeTime Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ.
 	void SetPurposeTime(Time* purposeTime);
 
-	/// @brief Гетер номера рейса.
-	/// @return Номер рейса.
+	/// @brief Р“РµС‚РµСЂ РЅРѕРјРµСЂР° СЂРµР№СЃР°.
+	/// @return РќРѕРјРµСЂ СЂРµР№СЃР°.
 	std::string GetFlightNumber() const;
 
-	/// @brief Гетер пункта отправления.
-	/// @return Пунтк отправления.
+	/// @brief Р“РµС‚РµСЂ РїСѓРЅРєС‚Р° РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @return РџСѓРЅС‚Рє РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	std::string GetFrom() const;
 
-	/// @brief Гетер пунтка назначения.
-	/// @return Пункт назначения.
+	/// @brief Р“РµС‚РµСЂ РїСѓРЅС‚РєР° РЅР°Р·РЅР°С‡РµРЅРёСЏ.
+	/// @return РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ.
 	std::string GetPurpose() const;
 
-	/// @brief Гетер времени отправления.
-	/// @return Время отправления.
+	/// @brief Р“РµС‚РµСЂ РІСЂРµРјРµРЅРё РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @return Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
 	Time* GetDepartureTime() const;
 
-	/// @brief Гетер времени прибытия.
-	/// @return Время прибытия.
+	/// @brief Р“РµС‚РµСЂ РІСЂРµРјРµРЅРё РїСЂРёР±С‹С‚РёСЏ.
+	/// @return Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ.
 	Time* GetPurposeTime() const;
 
-	/// @brief Гетер минут.
-	/// @return Минуты.
+	/// @brief Р“РµС‚РµСЂ РјРёРЅСѓС‚.
+	/// @return РњРёРЅСѓС‚С‹.
 	int GetFlightTimeMinutes() const;
 
-	/// @brief Конструктор.
-	/// @param flightNumber Номер рейса. 
-	/// @param from Пункт отправления.
-	/// @param purpose Пункт прибытия.
-	/// @param departureTime Время отправления.
-	/// @param purposeTime Время прибытия.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param flightNumber РќРѕРјРµСЂ СЂРµР№СЃР°. 
+	/// @param from РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @param purpose РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ.
+	/// @param departureTime Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ.
+	/// @param purposeTime Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ.
 	Flight(std::string& flightNumber, std::string& from,
 		std::string& purpose, Time* departureTime,
 		Time* purposeTime);
 };
 
-//TODO: не является частью класса. Перенеси в другой файл Demo.h и соответственно перенести в cpp файл
-/// @brief - 3.3.9 Агрегирование.
+//TODO: РЅРµ СЏРІР»СЏРµС‚СЃСЏ С‡Р°СЃС‚СЊСЋ РєР»Р°СЃСЃР°. РџРµСЂРµРЅРµСЃРё РІ РґСЂСѓРіРѕР№ С„Р°Р№Р» Demo.h Рё СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ РїРµСЂРµРЅРµСЃС‚Рё РІ cpp С„Р°Р№Р»
+/// @brief - 3.3.9 РђРіСЂРµРіРёСЂРѕРІР°РЅРёРµ.
 void DemoFlightWithTime();

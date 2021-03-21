@@ -1,68 +1,68 @@
-#pragma once
+п»ї#pragma once
 
-/// @brief Время.
+/// @brief Р’СЂРµРјСЏ.
 class Time
 {
 private:
-	/// @brief Год.
+	/// @brief Р“РѕРґ.
 	int _year;
-	/// @brief Месяц.
+	/// @brief РњРµСЃСЏС†.
 	int _month;
-	/// @brief День.
+	/// @brief Р”РµРЅСЊ.
 	int _day;
-	/// @brief Час.
+	/// @brief Р§Р°СЃ.
 	int _hour;
-	/// @brief Минуты.
+	/// @brief РњРёРЅСѓС‚С‹.
 	int _minute;
 
 public:
-	/// @brief Сетер года.
-	/// @param year Год.
+	/// @brief РЎРµС‚РµСЂ РіРѕРґР°.
+	/// @param year Р“РѕРґ.
 	void SetYear(int year);
 	
-	/// @brief Сетер месяца.
-	/// @param month Месяц.
+	/// @brief РЎРµС‚РµСЂ РјРµСЃСЏС†Р°.
+	/// @param month РњРµСЃСЏС†.
 	void SetMonth(int month);
 
-	//TODO: слились слова
-	/// @brief Сетердня.
-	/// @param day День.
+	//TODO: СЃР»РёР»РёСЃСЊ СЃР»РѕРІР°
+	/// @brief РЎРµС‚РµСЂРґРЅСЏ.
+	/// @param day Р”РµРЅСЊ.
 	void SetDay(int day);
 
-	/// @brief Сетер час.
-	/// @param hour Час.
+	/// @brief РЎРµС‚РµСЂ С‡Р°СЃ.
+	/// @param hour Р§Р°СЃ.
 	void SetHour(int hour);
 
-	/// @brief Сетер минут.
-	/// @param minute Минуты.
+	/// @brief РЎРµС‚РµСЂ РјРёРЅСѓС‚.
+	/// @param minute РњРёРЅСѓС‚С‹.
 	void SetMinute(int minute);
 
-	/// @brief Гетер года.
-	/// @return Год.
+	/// @brief Р“РµС‚РµСЂ РіРѕРґР°.
+	/// @return Р“РѕРґ.
 	int GetYear() const;
 
-	/// @brief Гетер месяца.
-	/// @return Месяц.
+	/// @brief Р“РµС‚РµСЂ РјРµСЃСЏС†Р°.
+	/// @return РњРµСЃСЏС†.
 	int GetMonth() const;
 
-	/// @brief Гетер дня.
-	/// @return День.
+	/// @brief Р“РµС‚РµСЂ РґРЅСЏ.
+	/// @return Р”РµРЅСЊ.
 	int GetDay() const;
 
-	/// @brief Гетер часа.
-	/// @return Час.
+	/// @brief Р“РµС‚РµСЂ С‡Р°СЃР°.
+	/// @return Р§Р°СЃ.
 	int GetHour() const;
 
-	/// @brief Гетер минут.
-	/// @return Минуты.
+	/// @brief Р“РµС‚РµСЂ РјРёРЅСѓС‚.
+	/// @return РњРёРЅСѓС‚С‹.
 	int GetMinute() const;
 
-	/// @brief Конструктор
-	/// @param year Год.
-	/// @param month Месяц.
-	/// @param day День.
-	/// @param hour Час.
-	/// @param minute Минуты.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	/// @param year Р“РѕРґ.
+	/// @param month РњРµСЃСЏС†.
+	/// @param day Р”РµРЅСЊ.
+	/// @param hour Р§Р°СЃ.
+	/// @param minute РњРёРЅСѓС‚С‹.
 	Time(int year, int month, int day, int hour, int minute);
 };
 

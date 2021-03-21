@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #include "IO.h"
 #include "Menu.h"
@@ -13,10 +13,10 @@ void Menu()
 	setlocale(LC_ALL, "Russian");
 	while (true)
 	{
-		std::cout << "DemoBook - 3.2.2 Ðàáîòà ñ ïîëÿìè-ìàññèâàìè. = 0\n"
-			<< "DemoRoute - 3.2.6 Ðàáîòà ñ ïîëÿìè-ìàññèâàìè = 1\n"
-			<< "DemoRectangleWithPoint - 3.3.4 àãðåãèðîâàíèå = 2\n"
-			<< "DemoFlightWithTime - 3.3.9 àãðåãèðîâàíèå = 3\n";
+		std::cout << "DemoBook - 3.2.2 Ð Ð°Ð±Ð¾Ñ‚Ð° Ñ Ð¿Ð¾Ð»ÑÐ¼Ð¸-Ð¼Ð°ÑÑÐ¸Ð²Ð°Ð¼Ð¸. = 0\n"
+			<< "DemoRoute - 3.2.6 Ð Ð°Ð±Ð¾Ñ‚Ð° Ñ Ð¿Ð¾Ð»ÑÐ¼Ð¸-Ð¼Ð°ÑÑÐ¸Ð²Ð°Ð¼Ð¸ = 1\n"
+			<< "DemoRectangleWithPoint - 3.3.4 Ð°Ð³Ñ€ÐµÐ³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ = 2\n"
+			<< "DemoFlightWithTime - 3.3.9 Ð°Ð³Ñ€ÐµÐ³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ = 3\n";
 		
 		int valueForMenu = GetElementConsoleInt();
 		switch (static_cast<MenuType>(valueForMenu))

@@ -1,35 +1,35 @@
-#pragma once
+п»ї#pragma once
 #include <string>
 
-/// @brief Маршрут общественного транспорта.
+/// @brief РњР°СЂС€СЂСѓС‚ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°.
 struct Route
 {
-	/// @brief Номер.
+	/// @brief РќРѕРјРµСЂ.
 	int RouteNumber;
-	/// @brief Средняя продолжительность.
+	/// @brief РЎСЂРµРґРЅСЏСЏ РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ.
 	int DurationInMitutes;
-	/// @brief Частота следования.
+	/// @brief Р§Р°СЃС‚РѕС‚Р° СЃР»РµРґРѕРІР°РЅРёСЏ.
 	int FrequencyInMitutes;
-	/// @brief Количество остановок.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ РѕСЃС‚Р°РЅРѕРІРѕРє.
 	int NumberStops;
-	/// @brief Массив названий остановок.
+	/// @brief РњР°СЃСЃРёРІ РЅР°Р·РІР°РЅРёР№ РѕСЃС‚Р°РЅРѕРІРѕРє.
 	std::string* Stops;
 };
 
-/// @brief 3.2.6 Работа с полями-массивами.
+/// @brief 3.2.6 Р Р°Р±РѕС‚Р° СЃ РїРѕР»СЏРјРё-РјР°СЃСЃРёРІР°РјРё.
 void DemoRoute();
 
-/// @brief Чтение с консоли полей.
-/// @param route Объект.
+/// @brief Р§С‚РµРЅРёРµ СЃ РєРѕРЅСЃРѕР»Рё РїРѕР»РµР№.
+/// @param route РћР±СЉРµРєС‚.
 void ReadRouteFromConsole(Route& route);
 
-/// @brief Вывод на консоль полей.
-/// @param route Объект.
+/// @brief Р’С‹РІРѕРґ РЅР° РєРѕРЅСЃРѕР»СЊ РїРѕР»РµР№.
+/// @param route РћР±СЉРµРєС‚.
 void WriteRouteToConsole(Route& route);
 
-/// @brief Поиск маршрута по сотановке.
-/// @param routes Массив маршуртов.
-/// @param routeCount Количество маршрутов.
-/// @param route Маршрут для поиска.
-/// @return Индекс.
+/// @brief РџРѕРёСЃРє РјР°СЂС€СЂСѓС‚Р° РїРѕ СЃРѕС‚Р°РЅРѕРІРєРµ.
+/// @param routes РњР°СЃСЃРёРІ РјР°СЂС€СѓСЂС‚РѕРІ.
+/// @param routeCount РљРѕР»РёС‡РµСЃС‚РІРѕ РјР°СЂС€СЂСѓС‚РѕРІ.
+/// @param route РњР°СЂС€СЂСѓС‚ РґР»СЏ РїРѕРёСЃРєР°.
+/// @return РРЅРґРµРєСЃ.
 int FindRouteTo(Route* routes, int routeCount, std::string& route);

@@ -1,6 +1,6 @@
-#pragma once
+п»ї#pragma once
 
-/// @brief Жанр музыки.
+/// @brief Р–Р°РЅСЂ РјСѓР·С‹РєРё.
 enum Genre
 {
 	Pop,
