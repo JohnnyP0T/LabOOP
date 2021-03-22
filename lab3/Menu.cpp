@@ -4,9 +4,7 @@
 #include "Menu.h"
 #include "Book.h"
 #include "Route.h"
-#include "Rectangle.h"
-#include "Flight.h"
-#include "Band.h"
+#include "DemoFunction.h"
 
 void Menu()
 {
@@ -16,7 +14,8 @@ void Menu()
 		std::cout << "DemoBook - 3.2.2 Работа с полями-массивами. = 0\n"
 			<< "DemoRoute - 3.2.6 Работа с полями-массивами = 1\n"
 			<< "DemoRectangleWithPoint - 3.3.4 агрегирование = 2\n"
-			<< "DemoFlightWithTime - 3.3.9 агрегирование = 3\n";
+			<< "DemoFlightWithTime - 3.3.9 агрегирование = 3\n"
+			<< "DemoBand = 4\n";
 		
 		int valueForMenu = GetElementConsoleInt();
 		switch (static_cast<MenuType>(valueForMenu))

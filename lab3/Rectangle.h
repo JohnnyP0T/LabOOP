@@ -14,7 +14,7 @@ private:
 	double _width;
 public:
 	/// @brief Конструктор.
-	/// @param point Центр.
+	/// @param center Центр.
 	/// @param length Длина.
 	/// @param width Ширина.
 	Rectangle(Point* center, double length, double width);
@@ -45,5 +45,3 @@ public:
 };
 
 //TODO: не является частью класса. Перенеси в другой файл Demo.h и соответственно перенести в cpp файл
-/// @brief 3.3.4 - Агрегирование.
-void DemoRectangleWithPoint();

@@ -37,6 +37,9 @@
     <Filter Include="Source Files\Class">
       <UniqueIdentifier>{6f261cee-b27c-46a0-b92d-436b7a835e2e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClassDiagram">
+      <UniqueIdentifier>{4310db5d-4301-4c47-b7ab-03adc44ca9b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Book.cpp">
@@ -74,6 +77,9 @@
     </ClCompile>
     <ClCompile Include="Band.cpp">
       <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoFunction.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,5 +119,19 @@
     <ClInclude Include="Band.h">
       <Filter>Header Files\Class</Filter>
     </ClInclude>
+    <ClInclude Include="DemoFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.5.6.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.3.6.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.3.12.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -142,6 +142,7 @@
     <ClInclude Include="Album.h" />
     <ClInclude Include="Band.h" />
     <ClInclude Include="Book.h" />
+    <ClInclude Include="DemoFunction.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="Genre.h" />
     <ClInclude Include="IO.h" />
@@ -156,6 +157,7 @@
     <ClCompile Include="Album.cpp" />
     <ClCompile Include="Band.cpp" />
     <ClCompile Include="Book.cpp" />
+    <ClCompile Include="DemoFunction.cpp" />
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="IO.cpp" />
     <ClCompile Include="main.cpp" />
@@ -165,6 +167,11 @@
     <ClCompile Include="Route.cpp" />
     <ClCompile Include="Song.cpp" />
     <ClCompile Include="Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.3.12.bmp" />
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.3.6.bmp" />
+    <Image Include="..\..\..\..\Documents\ClassDiagram_3.5.6.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
