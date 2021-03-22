@@ -51,7 +51,6 @@ void ReadBookFromConsole(Book& book)
 
 		time(&t);
 
-		//TODO: ����� ����� ��� ���������������� 
 		struct tm* calendarTime = localtime(&t);
 
 		int firstYear = 1900;
