@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "GeometricProgram.h"
 #include "IO.h"
 #include "Menu.h"
@@ -8,9 +8,9 @@ void Menu()
 	setlocale(LC_ALL, "Russian");
 	while (true)
 	{
-		std::cout << "DemoRing  Äåìîôóíêöèÿ êîëüöà - 4.4.6. Ââåäèòå: 0\n"
-			<< "DemoCollision Äåìîíñòðàöèÿ ðàñ÷åòà ñòîëêíîâåíèé - 4.5.5. Ââåäèòå: 1\n"
-			<< "DemoRectangleWithPointClass Äåìîíñòðàöèîíàÿ ôóíêöèÿ. Ââåäèòå: 2\n";
+		std::cout << "DemoRing  Ð”ÐµÐ¼Ð¾Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ ÐºÐ¾Ð»ÑŒÑ†Ð° - 4.4.6. Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: 0\n"
+			<< "DemoCollision Ð”ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ñ€Ð°ÑÑ‡ÐµÑ‚Ð° ÑÑ‚Ð¾Ð»ÐºÐ½Ð¾Ð²ÐµÐ½Ð¸Ð¹ - 4.5.5. Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: 1\n"
+			<< "DemoRectangleWithPointClass Ð”ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ. Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: 2\n";
 		int valueForMenu = GetElementConsoleInt();
 		switch (static_cast<MenuType>(valueForMenu))
 		{

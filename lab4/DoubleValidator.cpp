@@ -1,4 +1,4 @@
-#include "DoubleValidator.h"
+п»ї#include "DoubleValidator.h"
 #include <exception>
 
 
@@ -27,7 +27,7 @@ void DoubleValidator::AssertPositiveValue(const double value)
 {
 	if (value < 0)
 	{
-		throw std::exception("Радиус не может быть отрицательным");
+		throw std::exception("Р Р°РґРёСѓСЃ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј");
 	}
 }
 
@@ -37,6 +37,6 @@ void DoubleValidator::AssertValueInRange(const double value, const double min,
 {
 	if (value < min || value > max)
 	{
-		throw std::exception("Значение не входит в диапазон");
+		throw std::exception("Р—РЅР°С‡РµРЅРёРµ РЅРµ РІС…РѕРґРёС‚ РІ РґРёР°РїР°Р·РѕРЅ");
 	}
 }

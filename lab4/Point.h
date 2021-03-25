@@ -1,32 +1,32 @@
-#pragma once
+п»ї#pragma once
 
-/// @brief Точка
+/// @brief РўРѕС‡РєР°
 class Point
 {
 private:
-	/// @brief Координата x.
+	/// @brief РљРѕРѕСЂРґРёРЅР°С‚Р° x.
 	double _x;
-	/// @brief Координата y.
+	/// @brief РљРѕРѕСЂРґРёРЅР°С‚Р° y.
 	double _y;
 
-	/// @brief Сетер координаты x.
-	/// @param x Координата x.
+	/// @brief РЎРµС‚РµСЂ РєРѕРѕСЂРґРёРЅР°С‚С‹ x.
+	/// @param x РљРѕРѕСЂРґРёРЅР°С‚Р° x.
 	void SetX(double x);
-	/// @brief Сетер координаты y.
-	/// @param y Координата y. 
+	/// @brief РЎРµС‚РµСЂ РєРѕРѕСЂРґРёРЅР°С‚С‹ y.
+	/// @param y РљРѕРѕСЂРґРёРЅР°С‚Р° y. 
 	void SetY(double y);
 
 public:
-	/// @brief Гетер координаты x.
-	/// @return Координата x.
+	/// @brief Р“РµС‚РµСЂ РєРѕРѕСЂРґРёРЅР°С‚С‹ x.
+	/// @return РљРѕРѕСЂРґРёРЅР°С‚Р° x.
 	double GetX() const;
-	/// @brief Гетер координаты y.
-	/// @return Координата y.
+	/// @brief Р“РµС‚РµСЂ РєРѕРѕСЂРґРёРЅР°С‚С‹ y.
+	/// @return РљРѕРѕСЂРґРёРЅР°С‚Р° y.
 	double GetY() const;
 	
-	/// @brief Конструктор.
-	/// @param x Координата x.
-	/// @param y Координата y. 
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param x РљРѕРѕСЂРґРёРЅР°С‚Р° x.
+	/// @param y РљРѕРѕСЂРґРёРЅР°С‚Р° y. 
 	Point(double x, double y);
 };
 

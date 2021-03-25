@@ -1,4 +1,4 @@
-#include <exception>
+ο»Ώ#include <exception>
 
 #include "iostream"
 #include "Ring.h"
@@ -54,11 +54,11 @@ void GeometricProgram::DemoCollision()
 	Rectangle* rectangle2 = new Rectangle(point2, 1, 1);
 	if (CollisionManager::IsCollision(*rectangle1, *rectangle2))
 	{
-		std::cout << "Οεπερεκΰες." << std::endl;
+		std::cout << "ΠΠµΡ€ΠµΡΠµΠΊΠ°ΠµΡ‚." << std::endl;
 	}
 	else
 	{
-		std::cout << "Νε οεπερεκΰες." << std::endl;
+		std::cout << "ΠΠµ ΠΏΠµΡ€ΠµΡΠµΠΊΠ°ΠµΡ‚." << std::endl;
 	}
 	delete rectangle1;
 	delete rectangle2;
@@ -67,11 +67,11 @@ void GeometricProgram::DemoCollision()
 	Ring* ring2 = new Ring(12, 10, 5, 5);
 	if (CollisionManager::IsCollision(*ring1, *ring2))
 	{
-		std::cout << "Οεπερεκΰες." << std::endl;
+		std::cout << "ΠΠµΡ€ΠµΡΠµΠΊΠ°ΠµΡ‚." << std::endl;
 	}
 	else
 	{
-		std::cout << "Νε οεπερεκΰες." << std::endl;
+		std::cout << "ΠΠµ ΠΏΠµΡ€ΠµΡΠµΠΊΠ°ΠµΡ‚." << std::endl;
 	}
 	delete ring1;
 	delete ring2;

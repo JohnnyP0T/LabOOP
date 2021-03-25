@@ -1,55 +1,55 @@
-#pragma once
+п»ї#pragma once
 
 #include "Point.h"
 
-/// @brief Кольцо
+/// @brief РљРѕР»СЊС†Рѕ
 class Ring
 {
 private:
-	/// @brief Количество колец.
+	/// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕР»РµС†.
 	static int AllRingsCount;
 
-	/// @brief Внешний радиус.
+	/// @brief Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ.
 	double _outerRadius;
-	/// @brief Внутренний радиус.
+	/// @brief Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ.
 	double _innerRadius;
-	/// @brief Центр.
+	/// @brief Р¦РµРЅС‚СЂ.
 	Point* _center;
 	
 public:
-	/// @brief Конструктор.
-	/// @param outerRadius Внутренний радиус.
-	/// @param innerRadius Внешний радиус.
-	/// @param x Координата x. 
-	/// @param y Координата y.
+	/// @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	/// @param outerRadius Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ.
+	/// @param innerRadius Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ.
+	/// @param x РљРѕРѕСЂРґРёРЅР°С‚Р° x. 
+	/// @param y РљРѕРѕСЂРґРёРЅР°С‚Р° y.
 	Ring(double outerRadius, double innerRadius, double x,
 		double y);
 	~Ring();
 
-	/// @brief Сетер радиуса.
-	/// @param outerRadius Внещний радиус.
-	/// @param innerRadius Внутренний радиус.
+	/// @brief РЎРµС‚РµСЂ СЂР°РґРёСѓСЃР°.
+	/// @param outerRadius Р’РЅРµС‰РЅРёР№ СЂР°РґРёСѓСЃ.
+	/// @param innerRadius Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ.
 	void SetRadius(double outerRadius, double innerRadius);
-	/// @brief Сетер центра.
-	/// @param x Координата x.
-	/// @param y Координата y.
+	/// @brief РЎРµС‚РµСЂ С†РµРЅС‚СЂР°.
+	/// @param x РљРѕРѕСЂРґРёРЅР°С‚Р° x.
+	/// @param y РљРѕРѕСЂРґРёРЅР°С‚Р° y.
 	void SetCenter(double x, double y);
 
-	/// @brief Гетер количества объектов.
-	/// @return Количество объектов
+	/// @brief Р“РµС‚РµСЂ РєРѕР»РёС‡РµСЃС‚РІР° РѕР±СЉРµРєС‚РѕРІ.
+	/// @return РљРѕР»РёС‡РµСЃС‚РІРѕ РѕР±СЉРµРєС‚РѕРІ
 	static int GetAllRingsCount();
-	/// @brief Гетер внешнего радиуса.
-	/// @return Внешний радиус.
+	/// @brief Р“РµС‚РµСЂ РІРЅРµС€РЅРµРіРѕ СЂР°РґРёСѓСЃР°.
+	/// @return Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ.
 	double GetOuterRadius() const;
-	/// @brief Гетер внутреннего радиуса.
-	/// @return Внутренний радиус.
+	/// @brief Р“РµС‚РµСЂ РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ СЂР°РґРёСѓСЃР°.
+	/// @return Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ.
 	double GetInnerRadius() const;
-	/// @brief Гетер центра.
-	/// @return Центр.
+	/// @brief Р“РµС‚РµСЂ С†РµРЅС‚СЂР°.
+	/// @return Р¦РµРЅС‚СЂ.
 	Point* GetCenter() const;
 
-	/// @brief Гетер площади.
-	/// @return Площадь.
+	/// @brief Р“РµС‚РµСЂ РїР»РѕС‰Р°РґРё.
+	/// @return РџР»РѕС‰Р°РґСЊ.
 	double GetAria() const;
 };
 

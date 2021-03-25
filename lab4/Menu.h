@@ -1,6 +1,6 @@
-#pragma once
+п»ї#pragma once
 
-/// @brief Перечисление для меню.
+/// @brief РџРµСЂРµС‡РёСЃР»РµРЅРёРµ РґР»СЏ РјРµРЅСЋ.
 enum class MenuType
 {
 	DemoRing,
@@ -8,5 +8,5 @@ enum class MenuType
 	DemoRectangleWithPointClass
 };
 
-/// @brief Меню.
+/// @brief РњРµРЅСЋ.
 void Menu();

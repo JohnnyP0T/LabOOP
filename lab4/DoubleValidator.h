@@ -1,29 +1,29 @@
-#pragma once
+п»ї#pragma once
 
-/// @brief Проверка вещественных чисел.
+/// @brief РџСЂРѕРІРµСЂРєР° РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР».
 static class DoubleValidator
 {
 public:
-	/// @brief Проверка на знак.
-	/// @param value Значение.
-	/// @retval true Значение положительное.
-	/// @retval false Значение отрицательное.
+	/// @brief РџСЂРѕРІРµСЂРєР° РЅР° Р·РЅР°Рє.
+	/// @param value Р—РЅР°С‡РµРЅРёРµ.
+	/// @retval true Р—РЅР°С‡РµРЅРёРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ.
+	/// @retval false Р—РЅР°С‡РµРЅРёРµ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ.
 	static bool IsValuePositive(double value);
-	/// @brief Проверка на диапазон. 
-	/// @param value Значение.
-	/// @param min Диапазон от.
-	/// @param max Диапазон до.
-	/// @retval true Значение входит в диапазон.
-	/// @retval false Значение не входит в диапазон.
+	/// @brief РџСЂРѕРІРµСЂРєР° РЅР° РґРёР°РїР°Р·РѕРЅ. 
+	/// @param value Р—РЅР°С‡РµРЅРёРµ.
+	/// @param min Р”РёР°РїР°Р·РѕРЅ РѕС‚.
+	/// @param max Р”РёР°РїР°Р·РѕРЅ РґРѕ.
+	/// @retval true Р—РЅР°С‡РµРЅРёРµ РІС…РѕРґРёС‚ РІ РґРёР°РїР°Р·РѕРЅ.
+	/// @retval false Р—РЅР°С‡РµРЅРёРµ РЅРµ РІС…РѕРґРёС‚ РІ РґРёР°РїР°Р·РѕРЅ.
 	static bool IsValueInRange(double value, double min,
 		double max);
-	/// @brief Проверка на отрицательное число.
-	/// @param value Значение.
+	/// @brief РџСЂРѕРІРµСЂРєР° РЅР° РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ.
+	/// @param value Р—РЅР°С‡РµРЅРёРµ.
 	static void AssertPositiveValue(double value);
-	/// @brief Проверка на диапазон.(с исключением) 
-	/// @param value Значение.
-	/// @param min Диапазон от.
-	/// @param max Диапазон до.
+	/// @brief РџСЂРѕРІРµСЂРєР° РЅР° РґРёР°РїР°Р·РѕРЅ.(СЃ РёСЃРєР»СЋС‡РµРЅРёРµРј) 
+	/// @param value Р—РЅР°С‡РµРЅРёРµ.
+	/// @param min Р”РёР°РїР°Р·РѕРЅ РѕС‚.
+	/// @param max Р”РёР°РїР°Р·РѕРЅ РґРѕ.
 	static void AssertValueInRange(double value, double min,
 		double max);
 };

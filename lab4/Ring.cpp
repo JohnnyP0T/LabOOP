@@ -1,4 +1,4 @@
-#include <exception>
+ï»¿#include <exception>
 
 #include "Ring.h"
 
@@ -29,7 +29,7 @@ void Ring::SetRadius(const double outerRadius, const double innerRadius)
 
 	if (innerRadius > outerRadius)
 	{
-		throw std::exception("Âíóòðåííèé ðàäèóñ íå ìîæåò áûòü áîëüøå âíåøíåãî ðàäèóñà.");
+		throw std::exception("Ð’Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½Ð¸Ð¹ Ñ€Ð°Ð´Ð¸ÑƒÑ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð²Ð½ÐµÑˆÐ½ÐµÐ³Ð¾ Ñ€Ð°Ð´Ð¸ÑƒÑÐ°.");
 	}
 
 	this->_outerRadius = outerRadius;
