@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\UserInterface">
+      <UniqueIdentifier>{c3697fca-70f0-4efc-814c-2b75915c065b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface">
+      <UniqueIdentifier>{d073b640-0abd-4817-bbac-7fbb721ff582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Class">
+      <UniqueIdentifier>{23af2270-76e1-4f75-acc2-37859110b7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class">
+      <UniqueIdentifier>{840ce8ba-069c-4e73-ac00-3c45de412b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu">
+      <UniqueIdentifier>{9a1b0ad3-eae8-4bfe-bf50-643b0e2ef0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Menu">
+      <UniqueIdentifier>{80b33cf0-0fb9-484d-b3ad-329ba880870d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassDiagram">
+      <UniqueIdentifier>{29ed1c25-a252-4d56-808f-27051089be90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IO.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Ring.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IO.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Ring.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Documents\ClassDiagramLab4.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
