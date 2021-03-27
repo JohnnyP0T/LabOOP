@@ -9,37 +9,37 @@
 
 void GeometricProgram::DemoRing()
 {
-	//TODO: можно инициализировать сразу в try
-	Ring* ring1;
+	Point* point1 = new Point(1.2, 5.2);
+	Point* point2 = new Point(5.2, 8.2);
 	try
 	{
-		ring1 = new Ring(12, 13, -5, -2);
-	}
-	catch (std::exception e)
-	{
-		std::cout << e.what() << std::endl;
-	}
-	
-	//TODO: можно инициализировать сразу в try
-	Ring* ring2;
-	try
-	{
-		ring2 = new Ring(-1, 2, 2.5, 6.1);
+		Ring* ring1 = new Ring(12, 13, point1);
 	}
 	catch (std::exception e)
 	{
 		std::cout << e.what() << std::endl;
 	}
 
-	Ring* ring3 = new Ring(12, 5, 4.5, 6.6);
+	try
+	{
+		Ring* ring2 = new Ring(-1, 2, point2);
+	}
+	catch (std::exception e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	delete point1;
+	delete point2;
+
+	Ring* ring3 = new Ring(12, 5, new Point(4.5, 6.6));
 	std::cout << "Ring area: " << ring3->GetAria() << std::endl;
 	std::cout << "Ring count: " << Ring::GetAllRingsCount() << std::endl;
-	Ring* ring4 = new Ring(12, 5, 4.5, 6.6);
+	Ring* ring4 = new Ring(12, 5, new Point(4.5, 6.6));
 	std::cout << "Ring count: " << Ring::GetAllRingsCount() << std::endl;
-	Ring* ring5 = new Ring(12, 5, 4.5, 6.6);
+	Ring* ring5 = new Ring(12, 5, new Point(4.5, 6.6));
 	std::cout << "Ring count: " << Ring::GetAllRingsCount() << std::endl;
 
-	Ring* ring = new Ring(10.0, 5.0, 25.0, 25.0);
+	Ring* ring = new Ring(10.0, 5.0, new Point(25.0, 25.0));
 	std::cout << "Ring count: " << Ring::GetAllRingsCount() << std::endl;
 	delete ring;
 	std::cout << "Ring count: " << Ring::GetAllRingsCount() << std::endl;
@@ -65,8 +65,8 @@ void GeometricProgram::DemoCollision()
 	delete rectangle1;
 	delete rectangle2;
 
-	Ring* ring1 = new Ring(12, 10, 0, 0);
-	Ring* ring2 = new Ring(12, 10, 5, 5);
+	Ring* ring1 = new Ring(12, 10, new Point(0, 0));
+	Ring* ring2 = new Ring(12, 10, new Point(5, 5));
 	if (CollisionManager::IsCollision(*ring1, *ring2))
 	{
 		std::cout << "Пересекает." << std::endl;

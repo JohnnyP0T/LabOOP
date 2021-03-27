@@ -16,6 +16,7 @@ public:
 	/// @retval false пересекаются.
 	static bool IsCollision(Rectangle& rectangle1,
 		Rectangle& rectangle2);
+	
 	/// @brief Проверка на столкновение колец.
 	/// @param ring1 Первое кольцо.
 	/// @param ring2 Второе кольцо.

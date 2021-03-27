@@ -9,10 +9,13 @@ class Rectangle
 private:
 	/// @brief Центр.
 	Point* _center;
+	
 	/// @brief Длина.
 	double _length;
+	
 	/// @brief Ширина.
 	double _width;
+	
 public:
 	/// @brief Конструктор.
 	/// @param center Центр.

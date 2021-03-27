@@ -91,7 +91,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Documents\ClassDiagramLab4.bmp">
+    <Image Include="ClassDiagram\ClassDiagramLab4.bmp">
       <Filter>ClassDiagram</Filter>
     </Image>
   </ItemGroup>

@@ -6,11 +6,10 @@
 
 int Ring::AllRingsCount = 0;
 
-Ring::Ring(const double outerRadius, const double innerRadius, const double x, 
-           const double y)
+Ring::Ring(const double outerRadius, const double innerRadius, Point* center)
 {
 	this->SetRadius(outerRadius, innerRadius);
-	this->SetCenter(x, y);
+	this->SetCenter(center);
 	++AllRingsCount;
 }
 
@@ -37,10 +36,10 @@ void Ring::SetRadius(const double outerRadius, const double innerRadius)
 }
 
 
-void Ring::SetCenter(const double x, const double y)
+void Ring::SetCenter(Point* center)
 {
 	delete this->_center;
-	this->_center = new Point(x, y);
+	this->_center = center;
 }
 
 
