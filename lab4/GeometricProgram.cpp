@@ -9,6 +9,7 @@
 
 void GeometricProgram::DemoRing()
 {
+	//TODO: можно инициализировать сразу в try
 	Ring* ring1;
 	try
 	{
@@ -18,7 +19,8 @@ void GeometricProgram::DemoRing()
 	{
 		std::cout << e.what() << std::endl;
 	}
-
+	
+	//TODO: можно инициализировать сразу в try
 	Ring* ring2;
 	try
 	{

@@ -2,6 +2,7 @@
 
 #include "Point.h"
 
+// TODO: между полями и методами должны быть отступы в одну строку
 /// @brief Кольцо
 class Ring
 {
@@ -29,6 +30,7 @@ public:
 	/// @brief Сетер радиуса.
 	/// @param outerRadius Внещний радиус.
 	/// @param innerRadius Внутренний радиус.
+	//TODO: у каждого радиуса свой сеттер
 	void SetRadius(double outerRadius, double innerRadius);
 	/// @brief Сетер центра.
 	/// @param x Координата x.

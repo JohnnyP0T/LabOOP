@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 /// @brief Проверка вещественных чисел.
+// TODO: между полями и методами должны быть отступы в одну строку
 static class DoubleValidator
 {
 public:
