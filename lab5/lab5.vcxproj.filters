@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Point_5.2">
+      <UniqueIdentifier>{bad67cc5-e1d7-4fd7-bfc4-77b7b9cff2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Point_5.2">
+      <UniqueIdentifier>{711acbfd-d179-4687-a1e4-d5b7c49300c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DiscountSystem">
+      <UniqueIdentifier>{a3f021ba-e6b2-44ee-b591-d52f5547c3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DiscountSystem">
+      <UniqueIdentifier>{184af8c4-dc6b-47e2-b8c7-de8f877bb192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassDiagram">
+      <UniqueIdentifier>{6f59770e-45c1-4879-858a-ecde58a415e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Teacher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\Point_5.2</Filter>
+    </ClInclude>
+    <ClInclude Include="Post.h">
+      <Filter>Header Files\Point_5.2</Filter>
+    </ClInclude>
+    <ClInclude Include="PaidUser.h">
+      <Filter>Header Files\Point_5.2</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>Header Files\Point_5.2</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CategoryType.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscountBase.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PercentDiscount.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CertificateDiscount.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowCheckWithDiscount.h">
+      <Filter>Header Files\DiscountSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Teacher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\Point_5.2</Filter>
+    </ClCompile>
+    <ClCompile Include="Post.cpp">
+      <Filter>Source Files\Point_5.2</Filter>
+    </ClCompile>
+    <ClCompile Include="PaidUser.cpp">
+      <Filter>Source Files\Point_5.2</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>Source Files\Point_5.2</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>Source Files\DiscountSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscountBase.cpp">
+      <Filter>Source Files\DiscountSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PercentDiscount.cpp">
+      <Filter>Source Files\DiscountSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CertificateDiscount.cpp">
+      <Filter>Source Files\DiscountSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowCheckWithDiscount.cpp">
+      <Filter>Source Files\DiscountSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Documents\Person_lab5.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Documents\Product_lab5.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Documents\User_lab5.bmp">
+      <Filter>ClassDiagram</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
