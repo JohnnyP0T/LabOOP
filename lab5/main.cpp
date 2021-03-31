@@ -100,18 +100,18 @@ int main()
 	Product** products = new Product * [arrayCount]
 	{
 		new Product(names[0], TV, 3100.0),
-			new Product(names[1], TV, 150.0),
-			new Product(names[2], TV, 2100.0),
-			new Product(names[3], TV, 5000.0)
+		new Product(names[1], TV, 150.0),
+		new Product(names[2], TV, 2100.0),
+		new Product(names[3], TV, 5000.0)
 	};
 
 	//TODO: Можно вместо PercentDiscount слева от равно написать DiscountBase, тогда это будет выглядеть как полиморфизм
-	PercentDiscount* percentDiscount = new PercentDiscount(2.0, TV);
+	DiscountBase* percentDiscount = new PercentDiscount(2.0, TV);
 	ShowCheckWithDiscount(percentDiscount, products, arrayCount);
 	delete percentDiscount;
 	std::cout << std::endl;
 	//TODO: Можно вместо CertificateDiscount слева от равно написать DiscountBase, тогда это будет выглядеть как полиморфизм
-	CertificateDiscount* certificateDiscount = new CertificateDiscount(310.0, TV);
+	DiscountBase* certificateDiscount = new CertificateDiscount(310.0, TV);
 	ShowCheckWithDiscount(certificateDiscount, products, arrayCount);
 	delete certificateDiscount;
 
