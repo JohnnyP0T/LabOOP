@@ -1,7 +1,6 @@
 ﻿#pragma once
 
 /// @brief Точка
-// TODO: между полями и методами должны быть отступы в одну строку
 class Point
 {
 private:

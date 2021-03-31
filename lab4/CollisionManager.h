@@ -5,7 +5,6 @@
 #include "Ring.h"
 
 /// @brief Класс для проверки столкновений. - 4.5.4
-// TODO: между полями и методами должны быть отступы в одну строку
 static class CollisionManager
 {
 public:

@@ -1,8 +1,6 @@
 ﻿#pragma once
 
 #include "Point.h"
-
-// TODO: между полями и методами должны быть отступы в одну строку
 /// @brief Прямоугольник.
 class Rectangle
 {
@@ -25,7 +23,6 @@ public:
 
 	/// @brief Сетер для поля центр.
 	/// @param center Центр.
-	//TODO: у кольца передается Х и Y, а тут сразу Point. Не лучше использовать что-то одно?
 	void SetCenter(Point* center);
 
 	/// @brief Сетер для длины.

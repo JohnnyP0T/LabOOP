@@ -74,5 +74,3 @@ public:
 		std::string& purpose, Time* departureTime,
 		Time* purposeTime);
 };
-
-//TODO: не является частью класса. Перенеси в другой файл Demo.h и соответственно перенести в cpp файл
